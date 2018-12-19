@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.eclipse.leshan.server.californium.LeshanServerBuilder"/>
+<fullyQualifiedTypeName name="org.eclipse.leshan.core.observation.Observation"/>
+<fullyQualifiedTypeName name="org.eclipse.leshan.client.servers.Server"/>
+<fullyQualifiedTypeName name="org.eclipse.leshan.client.object.Server"/>
+<fullyQualifiedTypeName name="org.eclipse.leshan.client.object.Security"/>
+<fullyQualifiedTypeName name="java.net.UnknownHostException"/>
+<fullyQualifiedTypeName name="javax.jmdns.JmDNS"/>
+<fullyQualifiedTypeName name="javax.jmdns.ServiceInfo"/>
+<fullyQualifiedTypeName name="java.net.InetAddress"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+</qualifiedTypeNameHistroy>
