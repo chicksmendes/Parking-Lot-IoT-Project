@@ -28,35 +28,44 @@ public class IoTServer {
 			e1.printStackTrace();
 		}
 		
-//		server.getRegistrationService().addListener(new RegistrationListener() {
-//
-//			public void registered(Registration registration, Registration previousReg, 
-//					Collection<Observation> previousObsersations) {
-//			    System.out.println("new device: " + registration.getEndpoint());
-//			    try {
-//			        ReadResponse response = server.send(registration, new ReadRequest(3,0,10));
-//			        if (response.isSuccess()) {
-//			            System.out.println("Device time:" + ((LwM2mResource)response.getContent()).getValue());
-//			        }else {
-//			            System.out.println("Failed to read:" + response.getCode() + " " + response.getErrorMessage());
-//			        }
-//			    } catch (InterruptedException e) {
-//			        e.printStackTrace();
-//			    }
-//			}
-//	
-//		    public void updated(RegistrationUpdate update, Registration updatedReg, Registration previousReg) {
-//		        System.out.println("device is still here: " + updatedReg.getEndpoint());
-//		    }
-//	
-//		    public void unregistered(Registration registration, Collection<Observation> observations, boolean expired,
-//		            Registration newReg) {
-//		        System.out.println("device left: " + registration.getEndpoint());
-//		    }
-//		});
-//
+		DataBase db = new DataBase();
+		
+		db.connect("ParkingLotDB");
+
 	}
 	
 	
 
 }
+
+
+
+
+
+//server.getRegistrationService().addListener(new RegistrationListener() {
+//
+//	public void registered(Registration registration, Registration previousReg, 
+//			Collection<Observation> previousObsersations) {
+//	    System.out.println("new device: " + registration.getEndpoint());
+//	    try {
+//	        ReadResponse response = server.send(registration, new ReadRequest(3,0,10));
+//	        if (response.isSuccess()) {
+//	            System.out.println("Device time:" + ((LwM2mResource)response.getContent()).getValue());
+//	        }else {
+//	            System.out.println("Failed to read:" + response.getCode() + " " + response.getErrorMessage());
+//	        }
+//	    } catch (InterruptedException e) {
+//	        e.printStackTrace();
+//	    }
+//	}
+//
+//    public void updated(RegistrationUpdate update, Registration updatedReg, Registration previousReg) {
+//        System.out.println("device is still here: " + updatedReg.getEndpoint());
+//    }
+//
+//    public void unregistered(Registration registration, Collection<Observation> observations, boolean expired,
+//            Registration newReg) {
+//        System.out.println("device left: " + registration.getEndpoint());
+//    }
+//});
+//
