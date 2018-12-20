@@ -5,6 +5,7 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="builder"/>
 			<item value="reader"/>
 		</list>
 		<list key="replacehistory">
