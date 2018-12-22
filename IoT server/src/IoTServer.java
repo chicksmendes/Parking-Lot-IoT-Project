@@ -1,14 +1,5 @@
-import java.util.Collection;
-
-import org.eclipse.leshan.core.node.LwM2mResource;
-import org.eclipse.leshan.core.observation.Observation;
-import org.eclipse.leshan.core.request.ReadRequest;
-import org.eclipse.leshan.core.response.ReadResponse;
 import org.eclipse.leshan.server.californium.LeshanServerBuilder;
 import org.eclipse.leshan.server.californium.impl.LeshanServer;
-import org.eclipse.leshan.server.registration.Registration;
-import org.eclipse.leshan.server.registration.RegistrationListener;
-import org.eclipse.leshan.server.registration.RegistrationUpdate;
 
 public class IoTServer {
 
@@ -31,10 +22,14 @@ public class IoTServer {
 		DataBase db = new DataBase();
 		
 		db.connect("ParkingLotDB");
+		db.createTable();
+		db.insert();
+		db.select();
+		db.update();
+		db.delete();
+		db.close();
 
 	}
-	
-	
 
 }
 
