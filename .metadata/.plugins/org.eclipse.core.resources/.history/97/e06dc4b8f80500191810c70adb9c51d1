@@ -35,7 +35,7 @@ public class DataBase {
 	                        "(ID INT PRIMARY KEY     NOT NULL," +
 	                        " STATE          INT     NOT NULL, " + 
 	                        " PLATE          TEXT    NOT NULL)"; 
-	        stmt.executeUpdate(sql1);
+	        stmt.executeUpdate(sql);
 	         
 	         stmt = c.createStatement();
 	         String sql = "CREATE VEHICLE  " +

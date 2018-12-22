@@ -31,11 +31,11 @@ public class DataBase {
 	        System.out.println("Opened database successfully");
 
 			stmt = c.createStatement();
-	         String sql1 = "CREATE PARK " +
+	         String sql = "CREATE PARK " +
 	                        "(ID INT PRIMARY KEY     NOT NULL," +
 	                        " STATE          INT     NOT NULL, " + 
 	                        " PLATE          TEXT    NOT NULL)"; 
-	        stmt.executeUpdate(sql1);
+	        stmt.executeUpdate(sql);
 	         
 	         stmt = c.createStatement();
 	         String sql = "CREATE VEHICLE  " +

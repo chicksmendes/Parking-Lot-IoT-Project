@@ -2041,3 +2041,15 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.eclipse.c
 2018-12-21 12:57:01,950 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/IoT server/src/main/resources
 2018-12-21 12:57:01,951 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2018-12-21 12:57:01,951 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/IoT server/src/test/resources
+2018-12-22 15:48:39,041 [Worker-29: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-22 15:48:39,042 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/IoT server/src/main/resources
+2018-12-22 15:48:39,043 [Worker-29: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-22 15:48:39,043 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/IoT server/src/test/resources
+2018-12-22 15:48:53,989 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-22 15:48:53,989 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/IoT server/src/main/resources
+2018-12-22 15:48:53,990 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-22 15:48:53,990 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/IoT server/src/test/resources
+2018-12-22 15:49:02,320 [Worker-13: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-22 15:49:02,320 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/IoT server/src/main/resources
+2018-12-22 15:49:02,321 [Worker-13: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-12-22 15:49:02,322 [Worker-13: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/IoT server/src/test/resources
