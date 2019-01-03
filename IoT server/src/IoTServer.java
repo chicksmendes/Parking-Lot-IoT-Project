@@ -24,11 +24,12 @@ public class IoTServer {
 		db.connect("ParkingLotDB");
 		db.createTable();
 		//db.insert();
-		db.select();
-		db.update();
-		db.delete();
+//		db.select();
+//		db.update();
+//		db.delete();
 		db.close();
-
+	
+        
 	}
 
 }

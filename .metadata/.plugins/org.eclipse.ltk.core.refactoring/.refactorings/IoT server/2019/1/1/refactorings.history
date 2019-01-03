@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;time.java&apos; to &apos;currentTime.java&apos;&#x0A;- Original project: &apos;IoT server&apos;&#x0A;- Original element: &apos;time.java&apos;&#x0A;- Renamed element: &apos;currentTime.java&apos;" description="Rename compilation unit &apos;time.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{time.java" name="currentTime.java" references="false" stamp="1546470405634" version="1.0"/>
+</session>

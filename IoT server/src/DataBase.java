@@ -41,19 +41,20 @@ public class DataBase {
 	         String sql = "CREATE VEHICLE  " +
 	                        "(ID INT PRIMARY KEY     NOT NULL," +
 	                        " PLATE          TEXT    NOT NULL, " + 
+	                        " PARK           KEY    NOT NULL, " + 
 	                        " STARTTIME      TEXT    NOT NULL, " + 
 	                        " TIME           INT     NOT NULL, " + 
 	                        " COST           FLOAT   NOT NULL)"; 
 	         stmt.executeUpdate(sql);
+
+	  	   System.out.println("Table created successfully");
       } catch ( Exception e ) {
-         System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-         System.exit(0);
+    	  System.out.println("Table already exists");
       }
-	   System.out.println("Table created successfully");
 		
 	}
 	
-	public void insertParkingSpot() {
+	public void insertParkingSpot(String ID) {
 		Statement stmt = null;
 		
 		try {
@@ -63,7 +64,7 @@ public class DataBase {
 //	         System.out.println("Opened database successfully");
 	         stmt = c.createStatement();
 	         String sql = "INSERT INTO PARK (ID,STATE, PLATE) " +
-	                        "VALUES (1, 0, 32-KX-21');"; 
+	                        "VALUES (" + ID + ", 0, __-___-_');"; 
 	         stmt.executeUpdate(sql);
 
 	         stmt.close();
@@ -75,7 +76,7 @@ public class DataBase {
 	      System.out.println("Records created successfully");
 	}
 	
-	public void insertVehicle() {
+	public void insertVehicle(String ID, String plate) {
 		Statement stmt = null;
 		
 		try {
@@ -84,8 +85,8 @@ public class DataBase {
 //	         c.setAutoCommit(false);
 //	         System.out.println("Opened database successfully");
 	         stmt = c.createStatement();
-	         String sql = "INSERT INTO VEHICLE (ID,PLATE, STARTTIME,TIME, COST) " +
-	                        "VALUES (1, 'Paul', 32, 'California', 20000.00 );"; 
+	         String sql = "INSERT INTO VEHICLE (ID,PLATE, PARK, STARTTIME,TIME, COST) " +
+	                        "VALUES (" + ID + "," + plate + ", '-1', "+ currentTime.getTime()+ ", 0 );"; 
 	         stmt.executeUpdate(sql);
 
 	         stmt.close();
@@ -97,7 +98,7 @@ public class DataBase {
 	      System.out.println("Records created successfully");
 	}
 		
-	public void select() {
+	public void selectPark() {
 		   Statement stmt = null;
 		   try {
 		      
@@ -109,6 +110,42 @@ public class DataBase {
 
 		      stmt = c.createStatement();
 		      ResultSet rs = stmt.executeQuery( "SELECT * FROM COMPANY;" );
+		      
+		      while ( rs.next() ) {
+		         int id = rs.getInt("id");
+		         String  name = rs.getString("name");
+		         int age  = rs.getInt("age");
+		         String  address = rs.getString("address");
+		         float salary = rs.getFloat("salary");
+		         
+		         System.out.println( "ID = " + id );
+		         System.out.println( "NAME = " + name );
+		         System.out.println( "AGE = " + age );
+		         System.out.println( "ADDRESS = " + address );
+		         System.out.println( "SALARY = " + salary );
+		         System.out.println();
+		      }
+		      rs.close();
+		      stmt.close();
+		   } catch ( Exception e ) {
+		      System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+		      System.exit(0);
+		   }
+		   System.out.println("Operation done successfully");
+	}
+	
+	public void selectVehicle() {
+		   Statement stmt = null;
+		   try {
+		      
+//			   Class.forName("org.sqlite.JDBC");
+//		         c = DriverManager.getConnection("jdbc:sqlite:" + name + ".db");
+//			      c.setAutoCommit(false);
+//			      System.out.println("Opened database successfully");
+
+
+		      stmt = c.createStatement();
+		      ResultSet rs = stmt.executeQuery( "SELECT * FROM VEHICLE;" );
 		      
 		      while ( rs.next() ) {
 		         int id = rs.getInt("id");
