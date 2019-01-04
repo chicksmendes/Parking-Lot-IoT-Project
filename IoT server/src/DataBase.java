@@ -31,15 +31,15 @@ public class DataBase {
 	        System.out.println("Opened database successfully");
 
 			stmt = c.createStatement();
-	         String sql1 = "CREATE PARK " +
-	                        "(ID INT PRIMARY KEY     NOT NULL," +
+	         String sql1 = "CREATE TABLE PARK " +
+	                        "(ID INT PRIMARY KEY  AUTOINCREMENT NOT NULL," +
 	                        " STATE          INT     NOT NULL, " + 
 	                        " PLATE          TEXT    NOT NULL)"; 
 	        stmt.executeUpdate(sql1);
 	         
 	         stmt = c.createStatement();
-	         String sql = "CREATE VEHICLE  " +
-	                        "(ID INT PRIMARY KEY     NOT NULL," +
+	         String sql = "CREATE TABLE VEHICLE  " +
+	                        "(ID INT PRIMARY KEY  AUTOINCREMENT   NOT NULL," +
 	                        " PLATE          TEXT    NOT NULL, " + 
 	                        " PARK           KEY    NOT NULL, " + 
 	                        " STARTTIME      TEXT    NOT NULL, " + 
@@ -54,7 +54,7 @@ public class DataBase {
 		
 	}
 	
-	public void insertParkingSpot(String ID) {
+	public void insertParkingSpot() {
 		Statement stmt = null;
 		
 		try {
@@ -63,8 +63,8 @@ public class DataBase {
 //	         c.setAutoCommit(false);
 //	         System.out.println("Opened database successfully");
 	         stmt = c.createStatement();
-	         String sql = "INSERT INTO PARK (ID,STATE, PLATE) " +
-	                        "VALUES (" + ID + ", 0, __-___-_');"; 
+	         String sql = "INSERT INTO PARK (STATE, PLATE) " +
+	                        "VALUES ( 0, '__-___-_');"; 
 	         stmt.executeUpdate(sql);
 
 	         stmt.close();
@@ -76,7 +76,7 @@ public class DataBase {
 	      System.out.println("Records created successfully");
 	}
 	
-	public void insertVehicle(String ID, String plate) {
+	public void insertVehicle(String plate) {
 		Statement stmt = null;
 		
 		try {
@@ -85,8 +85,9 @@ public class DataBase {
 //	         c.setAutoCommit(false);
 //	         System.out.println("Opened database successfully");
 	         stmt = c.createStatement();
-	         String sql = "INSERT INTO VEHICLE (ID,PLATE, PARK, STARTTIME,TIME, COST) " +
-	                        "VALUES (" + ID + "," + plate + ", '-1', "+ currentTime.getTime()+ ", 0 );"; 
+	         String sql = "INSERT INTO VEHICLE (PLATE, PARK, STARTTIME,TIME, COST) " +
+	                        "VALUES (" + plate + ", '-1', "+ currentTime.getTime()+ ", 0 );"; 
+	        // data('now')
 	         stmt.executeUpdate(sql);
 
 	         stmt.close();
