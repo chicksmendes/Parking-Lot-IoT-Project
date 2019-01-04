@@ -1,0 +1,139 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+import org.eclipse.leshan.LwM2mId;
+import org.eclipse.leshan.client.californium.LeshanClient;
+import org.eclipse.leshan.client.californium.LeshanClientBuilder;
+import org.eclipse.leshan.client.object.Device;
+import org.eclipse.leshan.client.object.Security;
+import org.eclipse.leshan.client.object.Server;
+import org.eclipse.leshan.client.resource.ObjectsInitializer;
+import org.eclipse.leshan.core.request.BindingMode;
+
+
+
+public class ParkingSpotClient {
+	
+	private final LeshanClient client;
+	
+	// the registration ID assigned by the server
+    //private String registrationId;
+    
+    private static final int OBJECT_ID_PARKING_SPOT = 33700;
+	
+	public ParkingSpotClient() {
+		// TODO Auto-generated method stub
+		String endpoint = "Parking-Spot-Group129" ; // choose an endpoint name
+		LeshanClientBuilder builder = new LeshanClientBuilder(endpoint);
+		
+		String ipServer = null;
+		
+		try {
+			ipServer = Discovery.discoverService();
+			System.out.println(ipServer);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		// create objects
+		ObjectsInitializer initializer = new ObjectsInitializer();
+		initializer.setInstancesForObject(LwM2mId.SECURITY, Security.noSec("coap://" + ipServer + ":5683", 12345));
+		initializer.setInstancesForObject(LwM2mId.SERVER, new Server(12345, 5 * 60, BindingMode.U, false));
+		initializer.setInstancesForObject(LwM2mId.DEVICE, new Device("ParkingSpot", "Pi129", "129", "U"));
+		//initializer.setInstancesForObject(OBJECT_ID_PARKING_SPOT, new ParkingSpot());
+		
+		// add it to the client
+		builder.setObjects(initializer.create(LwM2mId.SECURITY,LwM2mId.SERVER, LwM2mId.DEVICE, OBJECT_ID_PARKING_SPOT));
+
+			
+		client = builder.build();
+		client.start();
+		
+        // De-register on shutdown and stop client.
+        Runtime.getRuntime().addShutdownHook(new Thread() {
+            @Override
+            public void run() {
+                client.destroy(true); // send de-registration request before destroy
+            }
+        });
+	}
+	
+
+	public static void main(String[] args) {
+		
+		ParkingSpotClient client = new ParkingSpotClient();
+		
+		
+		//ProcessBuilder builder = new ProcessBuilder("alpr", "-c", "eu", "plate.jpg", "|", "awk", "'NR==2", "{print $2}'") ;
+		String cmd = "awk 'NR==2 {print $2}'";
+		
+		ProcessBuilder process_alpr = new ProcessBuilder("alpr", "-c eu", "plate.jpg", "| stdbuf awk", cmd) ;
+		process_alpr.redirectErrorStream(true);
+		Process process = null;
+		try {
+			process = process_alpr.start();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		InputStream is = process.getInputStream();
+		BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+
+		String line = null;
+		try {
+			line = reader.readLine();
+			System.out.println(line);
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			line = reader.readLine();
+			System.out.println(line);
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		String plate = line.substring(line.indexOf("-") + 2, line.indexOf("c") - 1);
+		System.out.println(plate);
+		
+	}
+}
+
+//public class ConnectivityStatistics extends BaseInstanceEnabler {
+//
+//	    @Override
+//	    public ReadResponse read(int resourceid) {
+//	        switch (resourceid) {
+//	        case 0:
+//	            return ReadResponse.success(resourceid, getSmsTxCounter());
+//	        }
+//	        return ReadResponse.notFound();
+//	    }
+//
+//	    @Override
+//	    public WriteResponse write(int resourceid, LwM2mResource value) {
+//	        switch (resourceid) {
+//	        case 15: 
+//	            setCollectionPeriod((Long) value.getValue());
+//	            return WriteResponse.success();
+//	        }
+//	        return WriteResponse.notFound();
+//	    }
+//
+//	    @Override
+//	    public ExecuteResponse execute(int resourceid, String params) {
+//	        switch (resourceid) {
+//	        case 12: 
+//	            start();
+//	            return ExecuteResponse.success();
+//	        }
+//	        return ExecuteResponse.notFound();
+//	    }
+//}

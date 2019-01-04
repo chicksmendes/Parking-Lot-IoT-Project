@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;IoTClient&apos; to &apos;ParkingSpotClient&apos;&#x0A;- Original project: &apos;IoT_client&apos;&#x0A;- Original element: &apos;IoTClient&apos;&#x0A;- Renamed element: &apos;ParkingSpotClient&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;IoTClient&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{IoTClient.java[IoTClient" matchStrategy="1" name="ParkingSpotClient" qualified="false" references="true" similarDeclarations="false" stamp="1546607085398" textual="false" version="1.0"/>
+</session>

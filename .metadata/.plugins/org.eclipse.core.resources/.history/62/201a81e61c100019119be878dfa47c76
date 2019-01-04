@@ -1,0 +1,70 @@
+import org.eclipse.leshan.client.resource.BaseInstanceEnabler;
+import org.eclipse.leshan.core.node.LwM2mResource;
+import org.eclipse.leshan.core.response.WriteResponse;
+
+public class ParkingSpot extends BaseInstanceEnabler {
+	private static final int PARKING_SPOT_ID = 32801;
+	private static final int PARKING_SPOT_STATE = 32801;
+	private static final int VEHICLE_ID = 32802;
+	private static final int BILING_RATE = 32803;
+	private static final int VEIHICLE_PLATE_IMAGE = 32804;
+	
+	private final String ParkingSpotID;
+	private String ParkingSpotState;
+	private String VehicleID;
+	private float BillingRate;
+	//private FILE image;
+	
+	public ParkingSpot() {
+		ParkingSpotID = "Parking-Spot-Group129" ;
+		ParkingSpotState = "free";
+		VeihicleID = "__-___-_";
+		BillingRate = 0;
+	}
+	
+	@Override
+	public ReadResponse read(int resourceId) {
+		System.out.println("Device : read on resource " + resourceId);
+		
+		switch (resourceId) {
+		case PARKING_SPOT_ID:
+			return ReadResonse.success(resourceId, ParkingSpotID);
+		
+		case PARKING_SPOT_STATE:
+			return ReadResonse.success(resourceId, ParkingSpotState);
+		
+		case VEHICLE_ID:
+			return ReadResonse.success(resourceId, VehicleID);
+		
+		case BILING_RATE:
+			return ReadResonse.success(resourceId, BillingRate);
+			
+//		case VEIHICLE_PLATE_IMAGE:
+//			return ReadResonse.success(resourceId, image);
+		}
+	}
+	
+	public WriteReponse write(int resourceId, LwM2mResource value) {
+		System.out.println("Device : write on resource " + resourceId);
+		
+		switch (resourceId) {
+		case PARKING_SPOT_STATE:
+			ParkingSpotState = (String) value.getValue();
+			return WriteResponse.success();
+		
+		case VEHICLE_ID:
+			ParkingSpotState = (String) value.getValue();
+
+			return WriteResponse.success();
+		
+		case BILING_RATE:
+
+			return WriteResponse.success();
+			
+//		case VEIHICLE_PLATE_IMAGE:
+//			
+		//	return WriteResponse.success();
+		}
+	}
+	
+}

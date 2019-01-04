@@ -1,0 +1,18 @@
+
+public class ParkingSpot extends BaseInstanceEnabler {
+	private static final int PARKINGSPOTID = 32801;
+	private static final int PARKINGSPOTSTATE = 32801;
+	private static final int VEHICLEID = 32802;
+	private static final int BILINGRATE = 32803;
+	
+	private final String ParkingSpotID;
+	private final String ParkingSpotState;
+	private final String Veihicle ID;
+	private final float BillingRate;
+	
+	public ParkingSpot() {
+		ParkingSpotID = "Parking-Spot-Group129" ;
+	}
+	
+	
+}

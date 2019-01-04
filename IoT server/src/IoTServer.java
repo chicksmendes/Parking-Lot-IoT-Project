@@ -1,5 +1,3 @@
-
-
 import org.eclipse.leshan.server.californium.LeshanServerBuilder;
 import org.eclipse.leshan.server.californium.impl.LeshanServer;
 
@@ -13,6 +11,24 @@ public class IoTServer {
 		// builder.setSecurityStore(new InMemorySecurityStore());
 		LeshanServer server = builder.build();
 		
+//		server.GetClientRegistry().addListener(new ClientRegistryListener() {
+//			
+//			@Override
+//			public void registered(Client client) {
+//				System.out.println("New Client registration: " + client);
+//			}
+//			
+//			@Override
+//			public void updated(ClientUpdate update, Client clientUpdated) {
+//				//
+//			}
+//			
+//			@Override
+//			public void unregistered(Client client) {
+//				//
+//			}
+//			
+//		});
 		
 		try {
 			Publish.publishService();
