@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="org.eclipse.leshan.server.californium.LeshanServerBuilder"/>
-<fullyQualifiedTypeName name="java.net.UnknownHostException"/>
 <fullyQualifiedTypeName name="javax.jmdns.JmDNS"/>
 <fullyQualifiedTypeName name="javax.jmdns.ServiceInfo"/>
 <fullyQualifiedTypeName name="java.net.InetAddress"/>
@@ -17,8 +16,10 @@
 <fullyQualifiedTypeName name="org.eclipse.leshan.core.response.WriteResponse"/>
 <fullyQualifiedTypeName name="org.eclipse.leshan.core.node.LwM2mResource"/>
 <fullyQualifiedTypeName name="org.eclipse.leshan.client.object.Server"/>
-<fullyQualifiedTypeName name="org.eclipse.leshan.client.object.Security"/>
 <fullyQualifiedTypeName name="org.eclipse.leshan.ResponseCode"/>
+<fullyQualifiedTypeName name="java.net.UnknownHostException"/>
+<fullyQualifiedTypeName name="org.eclipse.leshan.client.object.Security"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.eclipse.leshan.server.registration.Registration"/>
 <fullyQualifiedTypeName name="org.eclipse.leshan.core.observation.Observation"/>
 </qualifiedTypeNameHistroy>

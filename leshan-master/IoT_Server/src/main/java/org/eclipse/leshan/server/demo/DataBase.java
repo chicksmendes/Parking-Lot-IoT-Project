@@ -1,5 +1,6 @@
 package org.eclipse.leshan.server.demo;
 
+import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -10,6 +11,12 @@ public class DataBase {
 	String databaseName;
 	Connection c = null;
 	String name = null;
+	
+	public void deleteDataBase(String fileName) {
+		
+		 File file = new File(fileName); 
+		 file.delete();
+	}
 	
 	public void connect(String fileName) {
       try {
@@ -27,10 +34,10 @@ public class DataBase {
 		Statement stmt = null;
 		
 		try {
-			Class.forName("org.sqlite.JDBC");
-	         c = DriverManager.getConnection("jdbc:sqlite:" + name + ".db");
-	         c.setAutoCommit(false);
-	        System.out.println("Opened database successfully");
+//			Class.forName("org.sqlite.JDBC");
+//	         c = DriverManager.getConnection("jdbc:sqlite:" + name + ".db");
+//	         c.setAutoCommit(false);
+//	        System.out.println("Opened database successfully");
 
 			stmt = c.createStatement();
 	         String sql1 = "CREATE TABLE PARK " +
