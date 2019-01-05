@@ -64,7 +64,7 @@ public class DataBase {
 //	         System.out.println("Opened database successfully");
 	         stmt = c.createStatement();
 	         String sql = "INSERT INTO PARK (STATE, PLATE) " +
-	                        "VALUES ( 0, '__-___-_');"; 
+	                        "VALUES ( 0, 'Vehicle-_-_');"; 
 	         stmt.executeUpdate(sql);
 
 	         stmt.close();

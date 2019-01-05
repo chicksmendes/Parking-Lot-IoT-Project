@@ -1,5 +1,0 @@
-
-public class ParkingSpot extends BaseInstanceEnabler {
-	private static final int PARKINGSPOTSTATE = 32801;
-	
-}

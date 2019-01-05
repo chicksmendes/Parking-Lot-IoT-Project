@@ -1,5 +1,11 @@
+import java.util.Collection;
+
+import org.eclipse.leshan.core.observation.Observation;
 import org.eclipse.leshan.server.californium.LeshanServerBuilder;
 import org.eclipse.leshan.server.californium.impl.LeshanServer;
+import org.eclipse.leshan.server.registration.Registration;
+import org.eclipse.leshan.server.registration.RegistrationListener;
+import org.eclipse.leshan.server.registration.RegistrationUpdate;
 
 public class IoTServer {
 
@@ -11,24 +17,22 @@ public class IoTServer {
 		// builder.setSecurityStore(new InMemorySecurityStore());
 		LeshanServer server = builder.build();
 		
-//		server.GetClientRegistry().addListener(new ClientRegistryListener() {
-//			
-//			@Override
-//			public void registered(Client client) {
-//				System.out.println("New Client registration: " + client);
-//			}
-//			
-//			@Override
-//			public void updated(ClientUpdate update, Client clientUpdated) {
-//				//
-//			}
-//			
-//			@Override
-//			public void unregistered(Client client) {
-//				//
-//			}
-//			
-//		});
+		server.getRegistrationService().addListener(new RegistrationListener() {
+
+		    public void registered(Registration registration, Registration previousReg,
+		            Collection<Observation> previousObsersations) {
+		        System.out.println("new device: " + registration.getEndpoint());
+		    }
+
+		    public void updated(RegistrationUpdate update, Registration updatedReg, Registration previousReg) {
+		        System.out.println("device is still here: " + updatedReg.getEndpoint());
+		    }
+
+		    public void unregistered(Registration registration, Collection<Observation> observations, boolean expired,
+		            Registration newReg) {
+		        System.out.println("device left: " + registration.getEndpoint());
+		    }
+		});
 		
 		try {
 			Publish.publishService();
