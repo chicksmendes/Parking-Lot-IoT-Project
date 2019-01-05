@@ -301,6 +301,11 @@ public class IoT_Server {
         ServletHolder objectSpecServletHolder = new ServletHolder(new ObjectSpecServlet(lwServer.getModelProvider()));
         root.addServlet(objectSpecServletHolder, "/api/objectspecs/*");
         
+        DataBase db = new DataBase();
+		
+		db.connect("ParkingLotDB");
+		db.createTable();
+        
         
         // Register a service to DNS-SD
 		try {
