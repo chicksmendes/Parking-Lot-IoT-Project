@@ -9374,3 +9374,645 @@ org.eclipse.core.runtime.CoreException: Launch configuration CLI references non-
 2019-01-05 01:28:02,468 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
 2019-01-05 01:28:02,468 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-01-05 01:28:02,468 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Client/src/test/resources
+2019-01-05 01:33:20,128 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 01:33:20,128 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2019-01-05 01:33:20,129 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 01:33:20,129 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Client/src/test/resources
+2019-01-05 01:33:44,762 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 01:33:44,762 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2019-01-05 01:33:44,763 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 01:33:44,763 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Client/src/test/resources
+2019-01-05 01:34:19,072 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 01:34:19,072 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-05 01:34:19,074 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 01:34:19,074 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Client/src/test/resources
+2019-01-05 01:36:54,268 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 01:36:54,268 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-05 01:36:54,270 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 01:36:54,270 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Client/src/test/resources
+2019-01-05 10:26:48,536 [Worker-28: Updating Maven Dependencies] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration IoTServer references non-existing project IoT server.
+org.eclipse.core.runtime.CoreException: Launch configuration IoTServer references non-existing project IoT server.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1832) ~[org.eclipse.jdt.launching_3.11.0.v20180827-1040.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1707) ~[org.eclipse.jdt.launching_3.11.0.v20180827-1040.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:225) [org.eclipse.debug.core_3.13.0.v20180821-1744.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.10.100.v20180827-1235.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.13.0.v20180821-1744.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:528) [org.eclipse.debug.core_3.13.0.v20180821-1744.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:416) [org.eclipse.debug.core_3.13.0.v20180821-1744.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:352) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:378) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:930) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.100.v20180817-1215.jar:na]
+2019-01-05 10:26:48,537 [Worker-28: Updating Maven Dependencies] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration IoTServer references non-existing project IoT server.
+org.eclipse.core.runtime.CoreException: Launch configuration IoTServer references non-existing project IoT server.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1832) ~[org.eclipse.jdt.launching_3.11.0.v20180827-1040.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1707) ~[org.eclipse.jdt.launching_3.11.0.v20180827-1040.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:225) [org.eclipse.debug.core_3.13.0.v20180821-1744.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.10.100.v20180827-1235.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.13.0.v20180821-1744.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:528) [org.eclipse.debug.core_3.13.0.v20180821-1744.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:416) [org.eclipse.debug.core_3.13.0.v20180821-1744.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:353) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:378) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:930) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.100.v20180817-1215.jar:na]
+2019-01-05 10:26:48,539 [Worker-28: Updating Maven Dependencies] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration IoTServer references non-existing project IoT server.
+org.eclipse.core.runtime.CoreException: Launch configuration IoTServer references non-existing project IoT server.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1832) ~[org.eclipse.jdt.launching_3.11.0.v20180827-1040.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1707) ~[org.eclipse.jdt.launching_3.11.0.v20180827-1040.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:53) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:38) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:225) [org.eclipse.debug.core_3.13.0.v20180821-1744.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.10.100.v20180827-1235.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.13.0.v20180821-1744.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2151) [org.eclipse.debug.core_3.13.0.v20180821-1744.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:381) [org.eclipse.debug.core_3.13.0.v20180821-1744.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:258) [org.eclipse.debug.core_3.13.0.v20180821-1744.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:228) [org.eclipse.debug.core_3.13.0.v20180821-1744.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:186) [org.eclipse.debug.core_3.13.0.v20180821-1744.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:354) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:378) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:70) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:783) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:930) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:98) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob$1.call(ProjectRegistryRefreshJob.java:1) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:81) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.100.v20180817-1215.jar:na]
+2019-01-05 10:27:01,504 [Worker-23: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.eclipse.leshan:leshan-server-demo:1.0.0-SNAPSHOT @ /home/francisco/eclipse-workspace/leshan-master/IoT_Server/pom.xml.
+2019-01-05 10:27:01,510 [Worker-23: Importing Maven projects] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.eclipse.leshan:leshan-server-cf:jar:1.0.0-SNAPSHOT is missing, no dependency information available
+2019-01-05 10:27:01,512 [Worker-23: Importing Maven projects] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.eclipse.leshan:leshan-server-cluster:jar:1.0.0-SNAPSHOT is missing, no dependency information available
+2019-01-05 10:27:01,649 [Worker-23: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /leshan-server-demo/src/main/java
+2019-01-05 10:27:01,649 [Worker-23: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /leshan-server-demo/src/main/resources
+2019-01-05 10:27:01,651 [Worker-23: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /leshan-server-demo/src/test/java
+2019-01-05 10:27:01,666 [Worker-23: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2019-01-05 10:27:01,964 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.eclipse.leshan:leshan-server-cf:jar:1.0.0-SNAPSHOT is missing, no dependency information available
+2019-01-05 10:27:01,964 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.eclipse.leshan:leshan-server-cluster:jar:1.0.0-SNAPSHOT is missing, no dependency information available
+2019-01-05 10:27:01,995 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:27:01,996 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:27:01,998 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:27:01,999 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:27:02,672 [Worker-22: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.eclipse.leshan:leshan-server-cf:1.0.0-SNAPSHOT
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.eclipse.leshan:leshan-server-cf:jar:sources:1.0.0-SNAPSHOT
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:279) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:254) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:221) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:137) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:135) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.100.v20180817-1215.jar:na]
+2019-01-05 10:27:02,675 [Worker-22: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for org.eclipse.leshan:leshan-server-cluster:1.0.0-SNAPSHOT
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.eclipse.leshan:leshan-server-cluster:jar:sources:1.0.0-SNAPSHOT
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:279) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:254) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:221) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:137) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:135) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.100.v20180817-1215.jar:na]
+2019-01-05 10:27:02,677 [Worker-22: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for org.eclipse.leshan:leshan-server-cf:1.0.0-SNAPSHOT
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.eclipse.leshan:leshan-server-cf:jar:javadoc:1.0.0-SNAPSHOT
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:279) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:265) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:221) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:137) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:135) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.100.v20180817-1215.jar:na]
+2019-01-05 10:27:02,680 [Worker-22: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download javadoc for org.eclipse.leshan:leshan-server-cluster:1.0.0-SNAPSHOT
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.eclipse.leshan:leshan-server-cluster:jar:javadoc:1.0.0-SNAPSHOT
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:776) ~[org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl$5.call(MavenImpl.java:1) ~[org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:112) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:743) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:720) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:279) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:265) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:221) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:137) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob$1.call(DownloadSourcesJob.java:1) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:135) [org.eclipse.m2e.jdt_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.100.v20180817-1215.jar:na]
+2019-01-05 10:27:33,498 [Worker-23: Building workspace] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:565) ~[org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:574) ~[org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:542) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:498) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:351) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:298) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:155) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:90) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:87) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:201) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:798) [org.eclipse.core.resources_3.13.100.v20180828-0158.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.10.100.v20180827-1235.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:219) [org.eclipse.core.resources_3.13.100.v20180828-0158.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:262) [org.eclipse.core.resources_3.13.100.v20180828-0158.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:315) [org.eclipse.core.resources_3.13.100.v20180828-0158.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.10.100.v20180827-1235.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:318) [org.eclipse.core.resources_3.13.100.v20180828-0158.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:370) [org.eclipse.core.resources_3.13.100.v20180828-0158.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:391) [org.eclipse.core.resources_3.13.100.v20180828-0158.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145) [org.eclipse.core.resources_3.13.100.v20180828-0158.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235) [org.eclipse.core.resources_3.13.100.v20180828-0158.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.100.v20180817-1215.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: Duplicated tag: 'phase' (position: START_TAG seen ...</phase>\n                        <phase>... @124:32) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:114) ~[maven-model-builder-3.5.3.jar:3.5.3]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:82) ~[maven-model-builder-3.5.3.jar:3.5.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:563) ~[org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	... 24 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Duplicated tag: 'phase' (position: START_TAG seen ...</phase>\n                        <phase>... @124:32) 
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.checkFieldWithDuplicate(MavenXpp3Reader.java:140) ~[maven-model-3.5.3.jar:3.5.3]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePluginExecution(MavenXpp3Reader.java:2932) ~[maven-model-3.5.3.jar:3.5.3]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePlugin(MavenXpp3Reader.java:2739) ~[maven-model-3.5.3.jar:3.5.3]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:988) ~[maven-model-3.5.3.jar:3.5.3]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2277) ~[maven-model-3.5.3.jar:3.5.3]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3852) ~[maven-model-3.5.3.jar:3.5.3]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:595) ~[maven-model-3.5.3.jar:3.5.3]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:109) ~[maven-model-builder-3.5.3.jar:3.5.3]
+	... 26 common frames omitted
+2019-01-05 10:27:35,149 [Worker-25: Building workspace] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:565) ~[org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:574) ~[org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:542) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:498) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:351) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:298) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:155) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:90) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:177) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:87) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:201) [org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:798) [org.eclipse.core.resources_3.13.100.v20180828-0158.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.10.100.v20180827-1235.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:219) [org.eclipse.core.resources_3.13.100.v20180828-0158.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:262) [org.eclipse.core.resources_3.13.100.v20180828-0158.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:315) [org.eclipse.core.resources_3.13.100.v20180828-0158.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.10.100.v20180827-1235.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:318) [org.eclipse.core.resources_3.13.100.v20180828-0158.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:370) [org.eclipse.core.resources_3.13.100.v20180828-0158.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:391) [org.eclipse.core.resources_3.13.100.v20180828-0158.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145) [org.eclipse.core.resources_3.13.100.v20180828-0158.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235) [org.eclipse.core.resources_3.13.100.v20180828-0158.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.100.v20180817-1215.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: Duplicated tag: 'phase' (position: START_TAG seen ...</phase>\n                        <phase>... @124:32) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:114) ~[maven-model-builder-3.5.3.jar:3.5.3]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:82) ~[maven-model-builder-3.5.3.jar:3.5.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:563) ~[org.eclipse.m2e.core_1.9.1.20180912-1601.jar:na]
+	... 24 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Duplicated tag: 'phase' (position: START_TAG seen ...</phase>\n                        <phase>... @124:32) 
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.checkFieldWithDuplicate(MavenXpp3Reader.java:140) ~[maven-model-3.5.3.jar:3.5.3]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePluginExecution(MavenXpp3Reader.java:2932) ~[maven-model-3.5.3.jar:3.5.3]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePlugin(MavenXpp3Reader.java:2739) ~[maven-model-3.5.3.jar:3.5.3]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:988) ~[maven-model-3.5.3.jar:3.5.3]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2277) ~[maven-model-3.5.3.jar:3.5.3]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3852) ~[maven-model-3.5.3.jar:3.5.3]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:595) ~[maven-model-3.5.3.jar:3.5.3]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:109) ~[maven-model-builder-3.5.3.jar:3.5.3]
+	... 26 common frames omitted
+2019-01-05 10:27:35,755 [Worker-25: reload maven project] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.eclipse.leshan:leshan-server-cf:jar:1.0.0-SNAPSHOT is missing, no dependency information available
+2019-01-05 10:27:35,756 [Worker-25: reload maven project] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.eclipse.leshan:leshan-server-cluster:jar:1.0.0-SNAPSHOT is missing, no dependency information available
+2019-01-05 10:27:35,831 [Worker-25: reload maven project] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.eclipse.leshan:leshan-server-cf:jar:1.0.0-SNAPSHOT is missing, no dependency information available
+2019-01-05 10:27:35,834 [Worker-25: reload maven project] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.eclipse.leshan:leshan-server-cluster:jar:1.0.0-SNAPSHOT is missing, no dependency information available
+2019-01-05 10:27:36,328 [Worker-33: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.eclipse.leshan:leshan-server-demo:1.0.0-SNAPSHOT @ /home/francisco/eclipse-workspace/leshan-master/IoT_Server/pom.xml.
+2019-01-05 10:27:36,333 [Worker-33: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.eclipse.leshan:leshan-server-cf:jar:1.0.0-SNAPSHOT is missing, no dependency information available
+2019-01-05 10:27:36,334 [Worker-33: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.eclipse.leshan:leshan-server-cluster:jar:1.0.0-SNAPSHOT is missing, no dependency information available
+2019-01-05 10:27:36,463 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:27:36,463 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-05 10:27:36,465 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:27:36,465 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:28:18,022 [Worker-23: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.eclipse.leshan:leshan-server-demo:1.0.0-M10 @ /home/francisco/eclipse-workspace/leshan-master/IoT_Server/pom.xml.
+2019-01-05 10:28:18,584 [Worker-23: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/eclipse/leshan/leshan-server-cluster/1.0.0-M10/leshan-server-cluster-1.0.0-M10.pom
+2019-01-05 10:28:18,635 [Worker-23: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/eclipse/leshan/leshan-server-cluster/1.0.0-M10/leshan-server-cluster-1.0.0-M10.pom
+2019-01-05 10:28:18,729 [Worker-23: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/eclipse/leshan/leshan-server-cluster/1.0.0-M10/leshan-server-cluster-1.0.0-M10.jar
+2019-01-05 10:28:18,904 [Worker-23: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/eclipse/leshan/leshan-server-cluster/1.0.0-M10/leshan-server-cluster-1.0.0-M10.jar
+2019-01-05 10:28:19,049 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:28:19,050 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-05 10:28:19,051 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:28:19,051 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:28:19,565 [Worker-25: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/eclipse/leshan/leshan-server-cluster/1.0.0-M10/leshan-server-cluster-1.0.0-M10.pom
+2019-01-05 10:28:19,661 [Worker-25: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/eclipse/leshan/leshan-server-cluster/1.0.0-M10/leshan-server-cluster-1.0.0-M10.pom
+2019-01-05 10:28:20,518 [Worker-33: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/eclipse/leshan/leshan-server-cluster/1.0.0-M10/leshan-server-cluster-1.0.0-M10-sources.jar
+2019-01-05 10:28:20,572 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:28:20,574 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:28:20,596 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:28:20,596 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:28:20,716 [Worker-33: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/eclipse/leshan/leshan-server-cluster/1.0.0-M10/leshan-server-cluster-1.0.0-M10-sources.jar
+2019-01-05 10:28:20,790 [Worker-33: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.eclipse.leshan:leshan-server-cluster:1.0.0-M10
+2019-01-05 10:28:21,627 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:28:21,627 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-05 10:28:21,628 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:28:21,628 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:34:03,019 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:34:03,022 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:34:03,030 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:34:03,030 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:34:45,414 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:34:45,417 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:34:45,420 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:34:45,420 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:35:03,722 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:35:03,724 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:35:03,728 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:35:03,728 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:35:16,326 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:35:16,328 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:35:16,332 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:35:16,332 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:35:26,434 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:35:26,436 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:35:26,439 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:35:26,439 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:35:58,790 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:35:58,791 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:35:58,793 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:35:58,793 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:36:07,924 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:36:07,926 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:36:07,928 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:36:07,928 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:36:12,045 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:36:12,047 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:36:12,051 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:36:12,051 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:36:35,381 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:36:35,383 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:36:35,386 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:36:35,386 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:36:50,392 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:36:50,394 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:36:50,397 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:36:50,397 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:36:55,251 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:36:55,253 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:36:55,255 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:36:55,255 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:37:17,398 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:37:17,401 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:37:17,405 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:37:17,405 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:37:55,993 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:37:55,995 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:37:55,997 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:37:55,997 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:38:05,097 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:38:05,099 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:38:05,101 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:38:05,101 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:39:46,707 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:39:46,708 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:39:46,710 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:39:46,710 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:39:57,228 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:39:57,230 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:39:57,232 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:39:57,232 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:39:59,073 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:39:59,074 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:39:59,076 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:39:59,076 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:41:24,325 [Worker-33: Launching LeshanServerDemo] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:41:24,327 [Worker-33: Launching LeshanServerDemo] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:41:24,330 [Worker-33: Launching LeshanServerDemo] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:41:24,330 [Worker-33: Launching LeshanServerDemo] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:41:45,874 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:41:45,875 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:41:45,877 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:41:45,877 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:42:00,749 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:42:00,750 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:42:00,753 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:42:00,753 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:42:13,498 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:42:13,500 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:42:13,502 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:42:13,502 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:42:34,234 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:42:34,235 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:42:34,237 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:42:34,237 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:43:10,283 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:43:10,286 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:43:10,289 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:43:10,289 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:43:13,004 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:43:13,006 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:43:13,009 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:43:13,009 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:43:38,914 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:43:38,915 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:43:38,917 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:43:38,917 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:43:58,310 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:43:58,312 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:43:58,315 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:43:58,315 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:44:03,805 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:44:03,807 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:44:03,808 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:44:03,808 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:44:19,114 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:44:19,115 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:44:19,117 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:44:19,117 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:44:26,971 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:44:26,972 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:44:26,974 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:44:26,974 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:44:48,169 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:44:48,171 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:44:48,175 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:44:48,175 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:44:52,147 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:44:52,149 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:44:52,152 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:44:52,152 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:45:01,685 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:45:01,687 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:45:01,689 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:45:01,689 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:45:25,667 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:45:25,668 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:45:25,670 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:45:25,670 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:45:34,515 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:45:34,517 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:45:34,519 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:45:34,519 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:45:49,256 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:45:49,258 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:45:49,260 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:45:49,260 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:45:58,588 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:45:58,589 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:45:58,591 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:45:58,591 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:46:07,288 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:46:07,291 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:46:07,293 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:46:07,293 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:46:18,911 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:46:18,913 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:46:18,916 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:46:18,916 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:46:25,425 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:46:25,426 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:46:25,428 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:46:25,428 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:46:35,563 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:46:35,564 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:46:35,566 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:46:35,566 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:46:42,509 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:46:42,510 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:46:42,511 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:46:42,511 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:47:11,102 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:47:11,103 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:47:11,105 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:47:11,105 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:47:12,597 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:47:12,598 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:47:12,599 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:47:12,600 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:47:36,749 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:47:36,751 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:47:36,752 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:47:36,753 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:47:44,421 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:47:44,422 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:47:44,424 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:47:44,424 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:48:04,999 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:48:05,001 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:48:05,004 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:48:05,004 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:48:15,744 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:48:15,746 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:48:15,749 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:48:15,749 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:48:41,569 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:48:41,572 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:48:41,574 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:48:41,574 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:49:29,402 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:49:29,403 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:49:29,404 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:49:29,404 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:49:40,974 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:49:40,976 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:49:40,979 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:49:40,979 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:50:05,667 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:50:05,669 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:50:05,672 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:50:05,672 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:50:16,652 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:50:16,654 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:50:16,656 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:50:16,656 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:50:38,424 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:50:38,425 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:50:38,428 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:50:38,428 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:51:02,977 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:51:02,978 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:51:02,980 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:51:02,980 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:51:08,754 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:51:08,756 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:51:08,759 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:51:08,759 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:51:16,605 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:51:16,606 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:51:16,608 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:51:16,608 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:54:16,629 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:54:16,631 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:54:16,633 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:54:16,633 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:54:28,997 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:54:28,999 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:54:29,001 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:54:29,001 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:54:41,703 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:54:41,706 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:54:41,710 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:54:41,710 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:54:58,696 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:54:58,697 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:54:58,699 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:54:58,699 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:55:10,171 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:55:10,173 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:55:10,176 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:55:10,176 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:55:23,269 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:55:23,270 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:55:23,272 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:55:23,272 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:55:33,267 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:55:33,269 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:55:33,270 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:55:33,270 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:56:49,994 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:56:49,995 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:56:49,997 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:56:49,997 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:57:21,764 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:57:21,766 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:57:21,769 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:57:21,769 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:57:24,661 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:57:24,663 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:57:24,665 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:57:24,665 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:57:54,838 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:57:54,840 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:57:54,842 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:57:54,842 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:58:49,296 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:58:49,298 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:58:49,299 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:58:49,299 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 10:59:54,857 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:59:54,859 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 10:59:54,862 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 10:59:54,862 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 11:00:23,139 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:00:23,141 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 11:00:23,142 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:00:23,142 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 11:02:42,364 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:02:42,365 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 11:02:42,367 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:02:42,367 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 11:04:36,560 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:04:36,562 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 11:04:36,563 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:04:36,563 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 11:05:26,231 [Worker-25: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.eclipse.leshan:leshan-server-demo:1.0.0-M10 @ /home/francisco/eclipse-workspace/leshan-master/IoT_Server/pom.xml.
+2019-01-05 11:05:26,460 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:05:26,461 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 11:05:26,484 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:05:26,484 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 11:05:27,770 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:05:27,771 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 11:05:27,791 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:05:27,791 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 11:06:07,307 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:06:07,309 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 11:06:07,311 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:06:07,311 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 11:08:13,835 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:08:13,839 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 11:08:13,842 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:08:13,842 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 11:08:33,854 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:08:33,857 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 11:08:33,860 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:08:33,860 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 11:09:56,883 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:09:56,884 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 11:09:56,887 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:09:56,887 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 11:10:21,849 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:10:21,852 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 11:10:21,855 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:10:21,855 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 11:10:39,342 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:10:39,344 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 11:10:39,347 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:10:39,347 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 11:11:27,520 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:11:27,522 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 11:11:27,525 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:11:27,525 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 11:12:45,811 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:12:45,813 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 11:12:45,814 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:12:45,814 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 11:12:57,509 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:12:57,510 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 11:12:57,512 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:12:57,512 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-05 11:13:16,320 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:13:16,323 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 134 resources
+2019-01-05 11:13:16,325 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-05 11:13:16,325 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources

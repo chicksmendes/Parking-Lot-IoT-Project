@@ -52,9 +52,8 @@ public class ParkingSpotClient {
 
     private static final Logger LOG = LoggerFactory.getLogger(ParkingSpotClient.class);
 
-    private final static String[] modelPaths = new String[] { "3303.xml", "32700.xml", "3341.xml",  "3345.xml" };
+    private final static String[] modelPaths = new String[] { "32700.xml", "3341.xml",  "3345.xml" };
 
-    private static final int OBJECT_ID_TEMPERATURE_SENSOR = 3303;
     private static final int OBJECT_ID_PARKING_SPOT = 32700;
     private static final int OBJECT_ID_DISPLAY = 3341;
     private static final int OBJECT_ID_JOYSTICK = 3345;
@@ -164,12 +163,11 @@ public class ParkingSpotClient {
         
         initializer.setClassForObject(DEVICE, MyDevice.class);
         initializer.setInstancesForObject(LOCATION, locationInstance);
-        initializer.setInstancesForObject(OBJECT_ID_TEMPERATURE_SENSOR, new RandomTemperatureSensor());
         initializer.setInstancesForObject(OBJECT_ID_PARKING_SPOT, new ParkingSpot());
         initializer.setInstancesForObject(OBJECT_ID_DISPLAY, new Display());
         initializer.setInstancesForObject(OBJECT_ID_JOYSTICK, new Joystick());
         List<LwM2mObjectEnabler> enablers = initializer.create(SECURITY, SERVER, DEVICE, LOCATION,
-                OBJECT_ID_TEMPERATURE_SENSOR, OBJECT_ID_PARKING_SPOT, OBJECT_ID_DISPLAY, OBJECT_ID_JOYSTICK);
+                OBJECT_ID_PARKING_SPOT, OBJECT_ID_DISPLAY, OBJECT_ID_JOYSTICK);
 
         // Create CoAP Config
         NetworkConfig coapConfig;
