@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LWM2M  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+	<Object ObjectType="MODefinition">
+		<Name>Addressable Text Display</Name>
+		<Description1>Description: For writing to a text-only or text mode graphics display.</Description1>
+		<ObjectID>3341</ObjectID>
+		<ObjectURN>urn:oma:lwm2m:ext:3341</ObjectURN>
+		<MultipleInstances>Single</MultipleInstances>
+		<Mandatory>Mandatory</Mandatory>
+		<Resources>
+			<Item ID="5700">
+				<Name>Text</Name>
+				<Operations>RW</Operations>
+				<MultipleInstances>Single</MultipleInstances>
+				<Mandatory>Mandatory</Mandatory>
+				<Type>String</Type>
+				<RangeEnumeration></RangeEnumeration>
+				<Units>Defined by “Units” resource.</Units>
+				<Description>A string of text.</Description>
+			</Item>
+		</Resources>
+		<Description2></Description2>
+	</Object>
+</LWM2M>
