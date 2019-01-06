@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="/home/francisco/eclipse-workspace/IoT server/src" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="/home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/main/java/org/eclipse/leshan/server/demo" key="org.eclipse.jdt.ui.lastextjar"/>
 	<item value="false" key="SortMembers.sort_all"/>
 	<item value="/home/francisco/eclipse-workspace/leshan-master/IoT_Client/src/main" key="org.eclipse.jdt.ui.last.external.project"/>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
@@ -61,7 +61,7 @@
 	<section name="quick_assist_proposal_size">
 	</section>
 	<section name="BuildPathsPropertyPage">
-		<item value="0" key="pageIndex"/>
+		<item value="2" key="pageIndex"/>
 	</section>
 	<section name="NewPackageWizardPage">
 		<item value="false" key="create_package_info_java"/>

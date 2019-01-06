@@ -19,7 +19,7 @@
 <fullyQualifiedTypeName name="org.eclipse.leshan.ResponseCode"/>
 <fullyQualifiedTypeName name="java.net.UnknownHostException"/>
 <fullyQualifiedTypeName name="org.eclipse.leshan.client.object.Security"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.eclipse.leshan.server.registration.Registration"/>
 <fullyQualifiedTypeName name="org.eclipse.leshan.core.observation.Observation"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

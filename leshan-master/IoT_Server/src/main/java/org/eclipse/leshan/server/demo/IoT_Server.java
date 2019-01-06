@@ -54,6 +54,7 @@ import org.eclipse.leshan.server.californium.LeshanServerBuilder;
 import org.eclipse.leshan.server.californium.impl.LeshanServer;
 import org.eclipse.leshan.server.cluster.RedisRegistrationStore;
 import org.eclipse.leshan.server.cluster.RedisSecurityStore;
+import org.eclipse.leshan.server.demo.servlet.ClientReservationServlet;
 import org.eclipse.leshan.server.demo.servlet.ClientServlet;
 import org.eclipse.leshan.server.demo.servlet.EventServlet;
 import org.eclipse.leshan.server.demo.servlet.ObjectSpecServlet;
@@ -285,6 +286,10 @@ public class IoT_Server {
 
         ServletHolder objectSpecServletHolder = new ServletHolder(new ObjectSpecServlet(lwServer.getModelProvider()));
         root.addServlet(objectSpecServletHolder, "/api/objectspecs/*");
+        
+        // New servlet to manage the reservation process
+        ServletHolder reservationServletHolder = new ServletHolder(new ClientReservationServlet(lwServer));
+        root.addServlet(reservationServletHolder, "/api/reservation/*");
         
 
         
