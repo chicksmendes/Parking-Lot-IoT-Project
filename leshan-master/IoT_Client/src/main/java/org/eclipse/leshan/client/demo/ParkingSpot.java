@@ -30,7 +30,7 @@ public class ParkingSpot extends BaseInstanceEnabler {
 		ParkingSpotID = "Parking-Spot-Group129" ;
 		ParkingSpotState = "free";
 		VehicleID = "__-___-_";
-		BillingRate = 0;
+		BillingRate = 0.01f;
 	}
 	
 	@Override

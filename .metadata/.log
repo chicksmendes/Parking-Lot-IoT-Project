@@ -8899,3 +8899,15 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Duplicated 
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2019-01-05 10:27:36.334
 !MESSAGE The POM for org.eclipse.leshan:leshan-server-cluster:jar:1.0.0-SNAPSHOT is missing, no dependency information available
+!SESSION 2019-01-06 17:40:43.204 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui.browser 2 0 2019-01-06 22:56:16.733
+!MESSAGE Internal browser is not available: No more handles because no underlying browser available.
+   SWT on GTK 2.x detected. It is reccomended to use SWT on GTK 3.x and Webkit2 API.
+

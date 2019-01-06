@@ -112,11 +112,11 @@ public class MyDevice extends BaseInstanceEnabler {
     }
 
     private String getManufacturer() {
-        return "Leshan Demo Device";
+        return "ParkingSpot";
     }
 
     private String getModelNumber() {
-        return "Model 500";
+        return "Pi129";
     }
 
     private String getSerialNumber() {

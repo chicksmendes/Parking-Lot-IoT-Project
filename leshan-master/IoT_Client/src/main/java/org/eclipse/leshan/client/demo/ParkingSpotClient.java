@@ -187,12 +187,6 @@ public class ParkingSpotClient {
         builder.setCoapConfig(coapConfig);
         final LeshanClient client = builder.build();
 
-        
-        
-
-        LOG.info("Press 'w','a','s','d' to change reported Location ({},{}).", locationInstance.getLatitude(),
-                locationInstance.getLongitude());
-
         // Start the client
         client.start();
 
@@ -205,6 +199,8 @@ public class ParkingSpotClient {
         });
 
         // Change the location through the Console
+        LOG.info("Press 'w','a','s','d' to change reported Location ({},{}).", locationInstance.getLatitude(),
+                locationInstance.getLongitude());
         try (Scanner scanner = new Scanner(System.in)) {
             while (scanner.hasNext()) {
                 String nextMove = scanner.next();

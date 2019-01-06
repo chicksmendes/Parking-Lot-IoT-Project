@@ -70,17 +70,14 @@ public class ClientReservationServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        // all registered clients
+    	// all registered clients
         if (req.getPathInfo() == null) {
         	
         	Collection<Registration> clients = new ArrayList<>();
             for (Iterator<Registration> iterator = server.getRegistrationService().getAllRegistrations(); iterator
                     .hasNext();) {
-            	clients.add(iterator.next());
+                clients.add(iterator.next());
             }
-
-        	
-        	
             List<ParkingClientObject> reservationList = new ArrayList<ParkingClientObject>();            
             for (Registration client : clients) {
             	ParkingClientObject pcObject = new ParkingClientObject();
@@ -119,11 +116,11 @@ public class ClientReservationServlet extends HttpServlet {
                 LwM2mObject spotNode = (LwM2mObject) cSpotResponse.getContent();
                 Map<Integer, LwM2mObjectInstance> spotInstances = spotNode.getInstances();
                 for (Map.Entry<Integer, LwM2mObjectInstance> entry : spotInstances.entrySet()) {
-                    String ParkingSpotID = (String) entry.getValue().getResource(32800).getValue();
+                    String spotId = (String) entry.getValue().getResource(32800).getValue();
                     String spotState = (String) entry.getValue().getResource(32801).getValue();
                     String vehicleId = (String) entry.getValue().getResource(32802).getValue();
                     Double billingRate = (Double) entry.getValue().getResource(32803).getValue();
-                    ParkingSpotObject ps = new ParkingSpotObject(ParkingSpotID, spotState, vehicleId);
+                    ParkingSpotObject ps = new ParkingSpotObject(spotId, spotState, vehicleId);
                     pcObject.getParkingSpotList().add(ps);
                 }
                 reservationList.add(pcObject);          

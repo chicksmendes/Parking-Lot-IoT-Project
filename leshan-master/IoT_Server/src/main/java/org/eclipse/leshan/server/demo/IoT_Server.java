@@ -86,7 +86,7 @@ public class IoT_Server {
 
     private static final Logger LOG = LoggerFactory.getLogger(IoT_Server.class);
 
-    private final static String[] modelPaths = new String[] {  "3341.xml", "3345.xml", 
+    private final static String[] modelPaths = new String[] {  "3341.xml", "3345.xml", "32700.xml", 
 
                             "Communication_Characteristics-V1_0.xml",
 
@@ -244,8 +244,7 @@ public class IoT_Server {
         
         lwServer.getRegistrationService().addListener(new RegistrationListener() {
 
-		    public void registered(Registration registration, Registration previousReg,
-		            Collection<Observation> previousObsersations) {
+		    public void registered(Registration registration, Registration previousReg, Collection<Observation> previousObsersations) {
 		        System.out.println("new device: " + registration.getEndpoint());
 		    }
 
@@ -253,8 +252,7 @@ public class IoT_Server {
 		        System.out.println("device is still here: " + updatedReg.getEndpoint());
 		    }
 
-		    public void unregistered(Registration registration, Collection<Observation> observations, boolean expired,
-		            Registration newReg) {
+		    public void unregistered(Registration registration, Collection<Observation> observations, boolean expired, Registration newReg) {
 		        System.out.println("device left: " + registration.getEndpoint());
 		    }
 		});
