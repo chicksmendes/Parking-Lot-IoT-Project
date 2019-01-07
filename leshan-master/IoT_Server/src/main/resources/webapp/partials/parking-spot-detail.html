@@ -1,0 +1,30 @@
+<div ng-if='parkingspot'>
+	<ol class="breadcrumb">
+  		<li><a href="#/parking-spots/">Parking Spots</a></li>
+  		<li class="active">{{ parkingSpot.id }}</li>
+	</ol>
+</div>
+
+
+<div class="row">
+	<div class="col-md-3">
+		<div id="datepicker"></div>
+	</div>
+	<div class="col-md-9">
+		<h2>Bills for {{ parkingSpot.id }} on {{date | date:'yyyy.MM.dd'}}</h2>
+		<ul ng-if="bills.length > 0">
+			<li ng-repeat="bill in bills">
+				{{bill.vehicleId}} - {{bill.billingAmount | currency:"€"}}
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+<div ng-if='error'>
+	<div class="alert alert-danger">{{error}}</div>
+</div>
+
+<div ng-if='deregistered'>
+	<h4>Parking spot <b>{{parkingSpotId}}</b> is no more registered.</h4>
+</div>
