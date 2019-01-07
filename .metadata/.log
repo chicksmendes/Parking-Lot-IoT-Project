@@ -8911,3 +8911,8 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp
 !MESSAGE Internal browser is not available: No more handles because no underlying browser available.
    SWT on GTK 2.x detected. It is reccomended to use SWT on GTK 3.x and Webkit2 API.
 
+
+!ENTRY org.eclipse.core.resources 2 2 2019-01-07 16:26:46.979
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2019-01-07 16:26:46.979
+!MESSAGE The project description file (.project) for 'IoT_Client' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.

@@ -4,6 +4,7 @@ public class ParkingSpotObject {
     private String parkingSpotId;
     private String parkingSpotState;
     private String vehicleId;
+    private float bilingRate;
 
     public String getParkingSpotId() {
         return parkingSpotId;
@@ -12,6 +13,15 @@ public class ParkingSpotObject {
     public void setParkingSpotId(String parkingSpotId) {
     	// Put thing in the DataBase
         this.parkingSpotId = parkingSpotId;
+    }
+    
+    public float getBilingRate() {
+        return bilingRate;
+    }
+
+    public void setBilingRate(float newBilingRate) {
+    	// Put thing in the DataBase
+        this.bilingRate = newBilingRate;
     }
 
     public String getParkingSpotState() {
@@ -32,10 +42,11 @@ public class ParkingSpotObject {
         this.vehicleId = vehicleId;
     }
 
-    public ParkingSpotObject(String parkingSpotId, String parkingSpotState, String vehicleId) {
+    public ParkingSpotObject(String parkingSpotId, String parkingSpotState, String vehicleId, float newBilingRate) {
     	// Put thing in the DataBase
         this.parkingSpotId = parkingSpotId;
         this.parkingSpotState = parkingSpotState;
         this.vehicleId = vehicleId;
+        this.bilingRate = newBilingRate;
     }
 }

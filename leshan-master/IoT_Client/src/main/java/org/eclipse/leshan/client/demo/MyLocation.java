@@ -19,7 +19,9 @@ public class MyLocation extends BaseInstanceEnabler {
     private static final Random RANDOM = new Random();
 
     private float latitude;
+    private String latitude_string;
     private float longitude;
+    private String longitude_string;
     private float scaleFactor;
     private Date timestamp;
 
@@ -84,6 +86,18 @@ public class MyLocation extends BaseInstanceEnabler {
         longitude = longitude + delta * scaleFactor;
         timestamp = new Date();
         fireResourcesChange(1, 5);
+    }
+    
+    public String getLatitudeString() {
+    	float lat = latitude - 90.0f;
+    	latitude_string = Float.toString(lat);
+        return latitude_string;
+    }
+
+    public String getLongitudeString() {
+    	float longi = longitude - 180.0f;
+    	longitude_string = Float.toString(longi);
+        return longitude_string;
     }
 
     public float getLatitude() {

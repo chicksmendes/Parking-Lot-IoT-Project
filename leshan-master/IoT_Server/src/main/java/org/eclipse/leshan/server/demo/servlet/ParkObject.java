@@ -3,10 +3,10 @@ package org.eclipse.leshan.server.demo.servlet;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ParkingClientObject {
+public class ParkObject {
     private String endPoint;
-    private String latitude;
-    private String longitude;
+    private float latitude;
+    private float longitude;
     private List<ParkingSpotObject> ParkingSpotList = new ArrayList<ParkingSpotObject>();
 
     public String getEndPoint() {
@@ -17,27 +17,31 @@ public class ParkingClientObject {
     	// Put thing in the DataBase
         this.endPoint = endPoint;
     }
-
-    public String getLatitude() {
+    
+    public float getLatitude() {
         return latitude;
     }
 
-    public void setLatitude(String latitude) {
+    public void setLatitude(float latitude) {
     	// Put thing in the DataBase
         this.latitude = latitude;
     }
 
-    public String getLongitude() {
+    public float getLongitude() {
         return longitude;
     }
 
-    public void setLongitude(String longitude) {
+    public void setLongitude(float longitude) {
     	// Put thing in the DataBase
         this.longitude = longitude;
     }
 
     public List<ParkingSpotObject> getParkingSpotList() {
         return ParkingSpotList;
+    }
+    
+    public void addParkingSpot(ParkingSpotObject ps) {
+        this.ParkingSpotList.add(ps);
     }
 
     public void setParkingSpotList(List<ParkingSpotObject> spotList) {
