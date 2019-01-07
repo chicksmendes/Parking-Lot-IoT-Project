@@ -1,39 +1,19 @@
- tr.occupied td {
-     background: rgb(255, 205, 198);
- }
- tr.occupied:hover td {
-     background: rgb(255, 184, 175);
- }
- tr.free td {
-     background: rgb(214, 255, 219);
- }
- tr.free:hover td {
-     background: rgb(175, 255, 185);
- }
- tr.reserved td {
-     background: rgb(255, 231, 204);
- }
- tr.reserved:hover td {
-     background: rgb(254, 217, 174);
- }
- .sum-free {
-     color: rgb(23, 145, 56);
- }
- .sum-reserved {
-     color: rgb(204, 120, 9);
- }
- .sum-occupied {
-     color: rgb(172, 34, 15);
- }
- #datepicker {
-	 margin-top: 70px;
- }
-.ui-datepicker-next {
-	margin-left: 70px;
-}
-.ui-state-active {
-	background: #ccc;
-}
+/*!
+ * Copyright (c) 2013-2015 Sierra Wireless and others.
+ *
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * and Eclipse Distribution License v1.0 which accompany this distribution.
+ *
+ * The Eclipse Public License is available at
+ *    http://www.eclipse.org/legal/epl-v10.html
+ * and the Eclipse Distribution License is available at
+ *    http://www.eclipse.org/org/documents/edl-v10.html.
+ *
+ * Contributors:
+ *     Sierra Wireless - initial API and implementation
+ */
+
 .container {
 	max-width: 980px;
 }
@@ -46,6 +26,11 @@ code {
 	color: #b11eb2;	
 }
 
+pre {
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: pre-wrap;
+}
 
 .navbar {
     text-transform: uppercase;
@@ -80,9 +65,9 @@ li.navlink>a:focus{
 	text-decoration: underline;
 }
 
-#bills-navlink.active>a, #parking-spot-navlink.active>a, #bills-navlink.active>a, #client-navlink.active>a,
-#bills-navlink>a:hover, #parking-spot-navlink>a:hover, #bills-navlink>a:hover, #client-navlink>a:hover,
-#bills-navlink>a:focus, #parking-spot-navlink>a:focus, #bills-navlink>a:focus, #client-navlink>a:focus {
+#client-navlink.active>a,
+#client-navlink>a:hover,
+#client-navlink>a:focus {
 		color:#25A79C;
 }
 #security-navlink.active>a,
@@ -147,6 +132,16 @@ li.navlink>a:focus{
 /* add cursor on table row */
 table.table-href > tbody{
 	cursor: pointer;
+}
+
+/* define minimum size for dropdown menu content format*/
+.dropdown-menu-contentformat{
+	min-width: 75px;
+}
+
+/* remove dotted line for abbreviation */
+abbr[title] {
+	border-bottom: none;
 }
 
 .panel-heading {
