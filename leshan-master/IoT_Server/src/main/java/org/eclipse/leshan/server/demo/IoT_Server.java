@@ -50,6 +50,9 @@ import org.eclipse.leshan.core.node.codec.DefaultLwM2mNodeDecoder;
 import org.eclipse.leshan.core.node.codec.DefaultLwM2mNodeEncoder;
 import org.eclipse.leshan.core.node.codec.LwM2mNodeDecoder;
 import org.eclipse.leshan.core.observation.Observation;
+import org.eclipse.leshan.core.request.ObserveRequest;
+import org.eclipse.leshan.core.request.WriteRequest.Mode;
+import org.eclipse.leshan.core.response.WriteResponse;
 import org.eclipse.leshan.server.californium.LeshanServerBuilder;
 import org.eclipse.leshan.server.californium.impl.LeshanServer;
 import org.eclipse.leshan.server.cluster.RedisRegistrationStore;
@@ -75,6 +78,10 @@ import redis.clients.jedis.JedisPool;
 import redis.clients.util.Pool;
 
 public class IoT_Server {
+	
+    private static final long TIMEOUT = 5000; // ms
+    
+    private static final String FORMAT_PARAM = "format";
 
     static {
         // Define a default logback.configurationFile
@@ -98,6 +105,8 @@ public class IoT_Server {
                             "Non-Access_Stratum_NAS_configuration-V1_0.xml" };
 
     private final static String USAGE = "java -jar leshan-server-demo.jar [OPTION]\n\n";
+    
+
 
     public static void main(String[] args) {
         // Define options for command line tools
@@ -243,9 +252,68 @@ public class IoT_Server {
         LeshanServer lwServer = builder.build();
         
         lwServer.getRegistrationService().addListener(new RegistrationListener() {
+        	
+//            private Map<String, Integer> stateRegistry;
+//            private Map<String, String> clientToSpot;
 
-		    public void registered(Registration registration, Registration previousReg, Collection<Observation> previousObsersations) {
+		    public void registered(Registration registration_in, Registration previousReg, Collection<Observation> previousObsersations) {
+		    	
+		    	final Registration registration = registration_in;
+		    	
 		        System.out.println("new device: " + registration.getEndpoint());
+		        String yValueTarget = "/3345/0/5703";
+		        String parkingSpotIdTarget = "/32700/0/32800";
+		        String stateTarget = "/32700/0/32801";
+		        String clientAddr = registration.getAddress().getHostAddress();
+		        String uriPrefix = "coap://" + clientAddr + ":" + Integer.toString(registration.getPort());
+
+		        // create & process request
+                
+//                ObserveRequest request = new ObserveRequest(, 3345, 5703);
+//                WriteResponse cResponse = lwServer.send(registration, request, TIMEOUT);
+                //processDeviceResponse(request, resp, cResponse);
+		        
+		        
+//		        final CoapClient stateClient = new CoapClient(uriPrefix + stateTarget);
+//
+//		        final CoapClient parkingSpotIdClient = new CoapClient(uriPrefix + parkingSpotIdTarget);
+//
+//		        
+//		        stateRegistry.put(registration.getEndpoint(), -100);
+//		        
+//		        String parkingSpotId = parkingSpotIdClient.get().getResponseText();
+//		        clientToSpot.put(registration.getEndpoint(), parkingSpotId);
+//
+//
+//		        CoapClient yValueCoapClient = new CoapClient(uriPrefix + yValueTarget);
+//		        System.out.println(uriPrefix + yValueTarget);
+//		        
+//		        yValueCoapClient.observe(new CoapHandler() {
+//
+//		            @Override
+//		            public void onLoad(CoapResponse response) {
+//		                float yValue = Float.parseFloat(response.getResponseText());
+//
+//		                if (yValue == 100 && yValue != stateRegistry.get(registration.getEndpoint())) {
+//		                    stateClient.put("occupied", MediaTypeRegistry.TEXT_PLAIN);
+//		                    System.out.println("changed to ocuppied");
+//		                    stateRegistry.put(registration.getEndpoint(), 100);
+//		                    //ReservationDao.writeEventToDatabase(registration.getEndpoint(), clienToSpot.get(client.getRegistrationId()), null, null, "occupy");
+//		                }
+//
+//		                if (yValue == -100 && yValue != stateRegistry.get(registration.getEndpoint())) {
+//		                    stateClient.put("free", MediaTypeRegistry.TEXT_PLAIN);
+//		                    System.out.println("changed to free");
+//		                    stateRegistry.put(registration.getEndpoint(), -100);
+//		                    //ReservationDao.writeEventToDatabase(registration.getEndpoint(), clienToSpot.get(client.getRegistrationId()), null, null, "free");
+//		                }
+//		            }
+//
+//		            @Override
+//		            public void onError() {
+//		                System.err.println("Error on setting the observe relation");
+//		            }
+//		        });
 		    }
 
 		    public void updated(RegistrationUpdate update, Registration updatedReg, Registration previousReg) {
@@ -312,6 +380,8 @@ public class IoT_Server {
         // Start Jetty & Leshan
         lwServer.start();
         server.start();
+
+        
         LOG.info("Web server started at {}.", server.getURI());
     }
 }

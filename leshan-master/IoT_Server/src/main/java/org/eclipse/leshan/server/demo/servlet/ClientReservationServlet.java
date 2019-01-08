@@ -169,8 +169,8 @@ public class ClientReservationServlet extends HttpServlet {
             String target = StringUtils.removeStart(req.getPathInfo(), "/" + clientEndpoint);
             Registration registration = server.getRegistrationService().getByEndpoint(clientEndpoint);
             if (registration != null) {
-//                WriteResponse cResponse = reservationRequest(registration);
-//                processDeviceResponse(req, resp, cResponse);
+                WriteResponse cResponse = reservationRequest(registration, target, req, resp);
+                processDeviceResponse(req, resp, cResponse);
             } else {
                 resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
                 resp.getWriter().format("No registered client with id '%s'", clientEndpoint).flush();

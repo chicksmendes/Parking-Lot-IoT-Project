@@ -10743,3 +10743,360 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Duplicated 
 2019-01-06 23:46:35,165 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2019-01-06 23:46:35,167 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-01-06 23:46:35,167 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 22:36:00,404 [Worker-5: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-01-07 22:54:06,508 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 22:54:06,520 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 22:54:06,536 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 22:54:06,536 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 22:54:20,035 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 22:54:20,041 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 22:54:20,045 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 22:54:20,045 [Worker-10: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 22:54:35,000 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 22:54:35,005 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 22:54:35,009 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 22:54:35,009 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:04:45,818 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:04:45,820 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:04:45,824 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:04:45,825 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:05:04,679 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:05:04,681 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:05:04,684 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:05:04,684 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:05:08,548 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:05:08,550 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:05:08,562 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:05:08,563 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:05:15,878 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:05:15,880 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:05:15,883 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:05:15,883 [Worker-0: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:11:55,836 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:11:55,838 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:11:55,843 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:11:55,843 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:12:58,045 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:12:58,047 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:12:58,050 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:12:58,050 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:13:02,186 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:13:02,192 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:13:02,197 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:13:02,198 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:13:21,403 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:13:21,408 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:13:21,417 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:13:21,417 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:13:35,777 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:13:35,782 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:13:35,785 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:13:35,786 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:13:43,594 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:13:43,596 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:13:43,600 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:13:43,600 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:15:46,408 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:15:46,409 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:15:46,412 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:15:46,412 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:15:50,808 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:15:50,810 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:15:50,813 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:15:50,813 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:21:17,177 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:21:17,178 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:21:17,188 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:21:17,188 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:21:44,730 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:21:44,732 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:21:44,735 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:21:44,735 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:25:26,838 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:25:26,840 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:25:26,843 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:25:26,843 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:25:31,740 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:25:31,742 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:25:31,745 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:25:31,745 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:25:43,706 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:25:43,708 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:25:43,714 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:25:43,714 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:26:07,786 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:26:07,788 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:26:07,791 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:26:07,792 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:26:22,469 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:26:22,471 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:26:22,474 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:26:22,474 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:26:26,664 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:26:26,666 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:26:26,669 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:26:26,669 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:27:00,441 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:27:00,442 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:27:00,444 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:27:00,445 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:27:28,715 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:27:28,716 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:27:28,719 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:27:28,719 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:31:51,497 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:31:51,498 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:31:51,501 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:31:51,501 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:31:59,198 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:31:59,199 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:31:59,201 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:31:59,201 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-07 23:36:55,746 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:36:55,748 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-07 23:36:55,750 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-07 23:36:55,750 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 00:47:50,471 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:47:50,473 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 00:47:50,476 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:47:50,476 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 00:48:11,778 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:48:11,779 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 00:48:11,782 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:48:11,782 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 00:48:53,459 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:48:53,461 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 00:48:53,463 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:48:53,463 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 00:49:15,431 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:49:15,432 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 00:49:15,434 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:49:15,434 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 00:49:20,023 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:49:20,025 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 00:49:20,028 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:49:20,028 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 00:49:46,865 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:49:46,867 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 00:49:46,869 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:49:46,870 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 00:51:43,497 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:51:43,498 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 00:51:43,500 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:51:43,500 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 00:51:46,735 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:51:46,737 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 00:51:46,740 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:51:46,740 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 00:51:53,672 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:51:53,674 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 00:51:53,676 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:51:53,677 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 00:52:10,661 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:52:10,662 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 00:52:10,665 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:52:10,665 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 00:52:25,388 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:52:25,390 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 00:52:25,392 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:52:25,392 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 00:52:35,379 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:52:35,380 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 00:52:35,382 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:52:35,382 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 00:52:47,666 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:52:47,668 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 00:52:47,672 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:52:47,672 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 00:53:07,494 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:53:07,496 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 00:53:07,499 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:53:07,499 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 00:53:23,033 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:53:23,034 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 00:53:23,035 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:53:23,036 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 00:53:24,241 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:53:24,242 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 00:53:24,245 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 00:53:24,245 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 10:38:24,599 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:38:24,600 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 10:38:24,602 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:38:24,602 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 10:38:32,280 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:38:32,282 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 10:38:32,284 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:38:32,285 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 10:38:47,452 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:38:47,454 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 10:38:47,457 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:38:47,458 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 10:39:01,530 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:39:01,532 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 10:39:01,534 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:39:01,534 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 10:39:13,310 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:39:13,312 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 10:39:13,314 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:39:13,314 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 10:39:37,639 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:39:37,641 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 10:39:37,644 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:39:37,644 [Worker-27: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 10:51:20,190 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:51:20,193 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 10:51:20,196 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:51:20,196 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 10:51:59,316 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:51:59,317 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 10:51:59,321 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:51:59,321 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 10:52:54,666 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:52:54,667 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 10:52:54,669 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:52:54,669 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 10:53:01,913 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:53:01,914 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 10:53:01,916 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:53:01,916 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 10:53:35,387 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:53:35,394 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 10:53:35,396 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:53:35,396 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 10:53:52,191 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:53:52,193 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 10:53:52,195 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:53:52,195 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 10:54:06,713 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:54:06,714 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 10:54:06,716 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:54:06,716 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 10:54:23,473 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:54:23,474 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 10:54:23,477 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:54:23,477 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 10:54:34,545 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:54:34,546 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 10:54:34,548 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:54:34,548 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 10:55:06,063 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:55:06,064 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 10:55:06,065 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:55:06,066 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 10:55:17,431 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:55:17,432 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 10:55:17,435 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:55:17,436 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 10:55:35,471 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:55:35,473 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 10:55:35,475 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:55:35,475 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 10:57:05,653 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:57:05,655 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 10:57:05,658 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:57:05,658 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 10:57:30,500 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:57:30,502 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 10:57:30,504 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 10:57:30,504 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:11:12,570 [Worker-41: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:11:12,572 [Worker-41: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 11:11:12,579 [Worker-41: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:11:12,583 [Worker-41: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:11:13,656 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:11:13,656 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-08 11:11:13,657 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:11:13,657 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:11:31,919 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:11:31,921 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 11:11:31,923 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:11:31,923 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:11:52,392 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:11:52,394 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 11:11:52,397 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:11:52,397 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:11:58,948 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:11:58,949 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 11:11:58,950 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:11:58,950 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:12:27,565 [Worker-41: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:12:27,571 [Worker-41: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 11:12:27,574 [Worker-41: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:12:27,575 [Worker-41: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:12:48,393 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:12:48,394 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 11:12:48,411 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:12:48,412 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:14:12,948 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:14:12,949 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 11:14:12,952 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:14:12,952 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:14:22,884 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:14:22,885 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 11:14:22,887 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:14:22,887 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:15:43,084 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:15:43,086 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 11:15:43,087 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:15:43,087 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:16:14,218 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:16:14,219 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 11:16:14,220 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:16:14,221 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:16:21,372 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:16:21,373 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 11:16:21,376 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:16:21,376 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:16:27,403 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:16:27,405 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 11:16:27,408 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:16:27,409 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:17:56,204 [Worker-41: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:17:56,205 [Worker-41: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 11:17:56,211 [Worker-41: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:17:56,211 [Worker-41: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:18:46,736 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:18:46,737 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 11:18:46,739 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:18:46,739 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:19:01,347 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:19:01,348 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 11:19:01,351 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:19:01,351 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:19:30,831 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:19:30,832 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 11:19:30,835 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:19:30,835 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:20:15,183 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:20:15,184 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 11:20:15,185 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:20:15,186 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:20:37,737 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:20:37,738 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 11:20:37,740 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:20:37,740 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:20:50,288 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:20:50,289 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 11:20:50,290 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:20:50,290 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:21:02,539 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:21:02,540 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 11:21:02,541 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:21:02,541 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:21:15,249 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:21:15,250 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 11:21:15,258 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:21:15,258 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:21:23,619 [Worker-41: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:21:23,620 [Worker-41: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 11:21:23,622 [Worker-41: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:21:23,622 [Worker-41: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:21:35,789 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:21:35,791 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 11:21:35,793 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:21:35,794 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources
+2019-01-08 11:46:26,302 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:46:26,304 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 65 resources
+2019-01-08 11:46:26,308 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-08 11:46:26,308 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/test/resources

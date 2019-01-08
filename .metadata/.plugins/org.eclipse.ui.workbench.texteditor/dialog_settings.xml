@@ -2,22 +2,25 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="ParkingSpotObject" key="selection"/>
+		<item value="handle" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
 			<item value="string"/>
-			<item value="ParkingSpot_s"/>
-			<item value="Dao"/>
-			<item value="cLocationResponse"/>
-			<item value="spotId"/>
-			<item value="registrations"/>
-			<item value="Opened"/>
-			<item value="modelPaths"/>
+			<item value="pc"/>
+			<item value="client"/>
+			<item value="clients"/>
+			<item value="pcO"/>
+			<item value="reservationList"/>
+			<item value="pcObject"/>
+			<item value="handleException"/>
 		</list>
 		<list key="replacehistory">
+			<item value="device"/>
+			<item value="devices"/>
+			<item value="ListParkingSpots"/>
 			<item value="ParkingSpotObject"/>
 		</list>
 	</section>

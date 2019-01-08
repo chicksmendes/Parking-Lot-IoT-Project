@@ -12,8 +12,9 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
-			<item value="/home/francisco/eclipse-workspace/leshan-master/IoT_Server"/>
 			<item value="/home/francisco/eclipse-workspace/leshan-master/IoT_Client"/>
+			<item value="/home/francisco/eclipse-workspace/leshan-master/IoT_Server"/>
+			<item value="/home/francisco/eclipse-workspace/Parking-Lot-IoT-Project-9cbde5c7d81ab462b54e184b6eaf6c4f7462d2c7/leshan-master/IoT_Server"/>
 			<item value="/home/francisco/eclipse-workspace/IoT server"/>
 			<item value="/home/francisco/eclipse-workspace/IoT_client"/>
 			<item value="/home/francisco/leshan-master/leshan-client-demo"/>

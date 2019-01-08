@@ -21,5 +21,8 @@
 <fullyQualifiedTypeName name="org.eclipse.leshan.client.object.Security"/>
 <fullyQualifiedTypeName name="org.eclipse.leshan.server.registration.Registration"/>
 <fullyQualifiedTypeName name="org.eclipse.leshan.core.observation.Observation"/>
+<fullyQualifiedTypeName name="org.eclipse.leshan.util.StringUtils"/>
+<fullyQualifiedTypeName name="org.apache.commons.lang.StringUtils"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.google.gson.JsonObject"/>
 </qualifiedTypeNameHistroy>
