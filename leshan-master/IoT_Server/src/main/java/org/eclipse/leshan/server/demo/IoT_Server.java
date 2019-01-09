@@ -46,13 +46,22 @@ import org.eclipse.jetty.webapp.WebAppContext;
 import org.eclipse.leshan.LwM2m;
 import org.eclipse.leshan.core.model.ObjectLoader;
 import org.eclipse.leshan.core.model.ObjectModel;
+import org.eclipse.leshan.core.node.LwM2mObject;
+import org.eclipse.leshan.core.node.LwM2mObjectInstance;
+import org.eclipse.leshan.core.node.codec.CodecException;
 import org.eclipse.leshan.core.node.codec.DefaultLwM2mNodeDecoder;
 import org.eclipse.leshan.core.node.codec.DefaultLwM2mNodeEncoder;
 import org.eclipse.leshan.core.node.codec.LwM2mNodeDecoder;
 import org.eclipse.leshan.core.observation.Observation;
+import org.eclipse.leshan.core.request.ContentFormat;
 import org.eclipse.leshan.core.request.ObserveRequest;
-import org.eclipse.leshan.core.request.WriteRequest.Mode;
-import org.eclipse.leshan.core.response.WriteResponse;
+import org.eclipse.leshan.core.request.ReadRequest;
+import org.eclipse.leshan.core.request.exception.ClientSleepingException;
+import org.eclipse.leshan.core.request.exception.InvalidResponseException;
+import org.eclipse.leshan.core.request.exception.RequestCanceledException;
+import org.eclipse.leshan.core.request.exception.RequestRejectedException;
+import org.eclipse.leshan.core.response.ObserveResponse;
+import org.eclipse.leshan.core.response.ReadResponse;
 import org.eclipse.leshan.server.californium.LeshanServerBuilder;
 import org.eclipse.leshan.server.californium.impl.LeshanServer;
 import org.eclipse.leshan.server.cluster.RedisRegistrationStore;
@@ -65,6 +74,7 @@ import org.eclipse.leshan.server.demo.servlet.SecurityServlet;
 import org.eclipse.leshan.server.impl.FileSecurityStore;
 import org.eclipse.leshan.server.model.LwM2mModelProvider;
 import org.eclipse.leshan.server.model.StaticModelProvider;
+import org.eclipse.leshan.server.observation.ObservationListener;
 import org.eclipse.leshan.server.registration.Registration;
 import org.eclipse.leshan.server.registration.RegistrationListener;
 import org.eclipse.leshan.server.registration.RegistrationUpdate;
@@ -106,7 +116,7 @@ public class IoT_Server {
 
     private final static String USAGE = "java -jar leshan-server-demo.jar [OPTION]\n\n";
     
-
+    static LeshanServer lwServer;
 
     public static void main(String[] args) {
         // Define options for command line tools
@@ -249,7 +259,7 @@ public class IoT_Server {
         builder.setSecurityStore(securityStore);
 
         // Create and start LWM2M server
-        LeshanServer lwServer = builder.build();
+        lwServer = builder.build();
         
         lwServer.getRegistrationService().addListener(new RegistrationListener() {
         	
@@ -261,32 +271,36 @@ public class IoT_Server {
 		    	final Registration registration = registration_in;
 		    	
 		        System.out.println("new device: " + registration.getEndpoint());
-		        String yValueTarget = "/3345/0/5703";
-		        String parkingSpotIdTarget = "/32700/0/32800";
-		        String stateTarget = "/32700/0/32801";
-		        String clientAddr = registration.getAddress().getHostAddress();
-		        String uriPrefix = "coap://" + clientAddr + ":" + Integer.toString(registration.getPort());
-
+		        //String yValueTarget = "/3345/0/5703";
+		        String parkingSpotIdObject = "/32700";
+		        
+		        // Get ID and State of parking Spot
+                ReadRequest PSrequest = new ReadRequest(parkingSpotIdObject);
+                ReadResponse response = null;
+				try {
+					response = lwServer.send(registration, PSrequest, TIMEOUT);
+				} catch (CodecException | InvalidResponseException | RequestCanceledException | RequestRejectedException
+						| ClientSleepingException | InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				LwM2mObject objectID = (LwM2mObject) response.getContent();
+				LwM2mObjectInstance objectIDinstance = objectID.getInstance(0);
+				System.out.println("ID: " + objectIDinstance.getResource(32800).getValue());
+				System.out.println("State: " + objectIDinstance.getResource(32801).getValue());
+				
+				// ADD TO THE DATABASE
+				
 		        // create & process request
                 
-//                ObserveRequest request = new ObserveRequest(, 3345, 5703);
-//                WriteResponse cResponse = lwServer.send(registration, request, TIMEOUT);
-                //processDeviceResponse(request, resp, cResponse);
-		        
-		        
-//		        final CoapClient stateClient = new CoapClient(uriPrefix + stateTarget);
-//
-//		        final CoapClient parkingSpotIdClient = new CoapClient(uriPrefix + parkingSpotIdTarget);
-//
-//		        
-//		        stateRegistry.put(registration.getEndpoint(), -100);
-//		        
-//		        String parkingSpotId = parkingSpotIdClient.get().getResponseText();
-//		        clientToSpot.put(registration.getEndpoint(), parkingSpotId);
-//
-//
-//		        CoapClient yValueCoapClient = new CoapClient(uriPrefix + yValueTarget);
-//		        System.out.println(uriPrefix + yValueTarget);
+                ObserveRequest request = new ObserveRequest(ContentFormat.JSON, 3345, 5703);
+                try {
+					ObserveResponse cResponse = lwServer.send(registration, request, TIMEOUT);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                
 //		        
 //		        yValueCoapClient.observe(new CoapHandler() {
 //
@@ -323,8 +337,55 @@ public class IoT_Server {
 		    public void unregistered(Registration registration, Collection<Observation> observations, boolean expired, Registration newReg) {
 		        System.out.println("device left: " + registration.getEndpoint());
 		    }
+		    
+		    
 		});
+        
+//        lwServer.getObservationRegistry().addListener(new ObservationRegistryListener() {
+//        	
+//        })
+        
+        	
+        lwServer.getObservationService().addListener(new ObservationListener() {
+        	public void newObservation(Observation observation, Registration registration) {
+        		
+        	}
+        	
+        	public void onResponse(Observation observation, Registration registration, ObserveResponse response) {
+        		LwM2mObject objectYValue = (LwM2mObject) response.getContent();
+				LwM2mObjectInstance objectYValueinstance = objectYValue.getInstance(0);
+				System.out.println("Y Value: " + objectYValueinstance.getResource(5703).getValue());
+				
+				Double Yvalue = (Double) objectYValueinstance.getResource(5703).getValue();
+				
+        		float yValue = Yvalue.floatValue();
+        		
+        		// PUTTING THINGS IN DATA BASE IF A CHANGE IS FOUND
 
+//                if (yValue == 100 && yValue != stateRegistry.get(registration.getEndpoint())) {
+//                    stateClient.put("occupied", MediaTypeRegistry.TEXT_PLAIN);
+//                    System.out.println("changed to ocuppied");
+//                    stateRegistry.put(registration.getEndpoint(), 100);
+//                    //ReservationDao.writeEventToDatabase(registration.getEndpoint(), clienToSpot.get(client.getRegistrationId()), null, null, "occupy");
+//                }
+//
+//                if (yValue == -100 && yValue != stateRegistry.get(registration.getEndpoint())) {
+//                    stateClient.put("free", MediaTypeRegistry.TEXT_PLAIN);
+//                    System.out.println("changed to free");
+//                    stateRegistry.put(registration.getEndpoint(), -100);
+//                    //ReservationDao.writeEventToDatabase(registration.getEndpoint(), clienToSpot.get(client.getRegistrationId()), null, null, "free");
+//                }
+        	}
+        	
+        	public void cancelled(Observation observation) {
+        		
+        	}
+        	
+        	public void onError(Observation observation, Registration registration, Exception exception) {
+        		
+        	}
+        });
+        
         // Now prepare Jetty
         InetSocketAddress jettyAddr;
         if (webAddress == null) {
