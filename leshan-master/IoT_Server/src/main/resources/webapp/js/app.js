@@ -21,7 +21,9 @@
 var leshanApp = angular.module('leshanApp',[ 
         'ngRoute',
         'clientControllers',
-        'objectDirectives',
+        'objectDirectives', 
+        'parkingSpotControllers',
+        'parkingSpotServices',
         'instanceDirectives',
         'resourceDirectives',
         'resourceFormDirectives',
@@ -38,5 +40,10 @@ leshanApp.config(['$routeProvider', '$locationProvider', function($routeProvider
         when('/clients',           { templateUrl : 'partials/client-list.html',   controller : 'ClientListCtrl' }).
         when('/clients/:clientId', { templateUrl : 'partials/client-detail.html', controller : 'ClientDetailCtrl' }).
         when('/security',          { templateUrl : 'partials/security-list.html', controller : 'SecurityCtrl' }).
+
+        
+        when('/parking-spots',     { templateUrl : 'partials/parking-spot-list.html', controller : 'ParkingSpotListCtrl' }).
+        when('/parking-spots/:parkingSpotEndpoint/:parkingSpotId', { templateUrl : 'partials/parking-spot-detail.html', controller : 'ParkingSpotDetailCtrl' }).
+        when('/bills',             { templateUrl : 'partials/bills.html', controller : 'BillsCtrl' }).
         otherwise({ redirectTo : '/clients' });
 }]);

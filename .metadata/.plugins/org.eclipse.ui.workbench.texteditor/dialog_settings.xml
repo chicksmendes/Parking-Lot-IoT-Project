@@ -8,14 +8,14 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="string"/>
-			<item value="pc"/>
-			<item value="client"/>
-			<item value="clients"/>
-			<item value="pcO"/>
-			<item value="reservationList"/>
-			<item value="pcObject"/>
-			<item value="handleException"/>
+			<item value="parkin"/>
+			<item value="clientController"/>
+			<item value="processDeviceResponse"/>
+			<item value="readRes"/>
+			<item value="readRe"/>
+			<item value="ReadRes"/>
+			<item value="cLocationResponse"/>
+			<item value="device"/>
 		</list>
 		<list key="replacehistory">
 			<item value="device"/>

@@ -12,7 +12,7 @@ parkingSpotServices.factory('parkingSpotServices',["$http", function($http) {
         for (var k in mappings) {
             (function(key){ // anonymous function needed since otherwise key will always be last element of mappings
                 var objectPath = mappings[key];
-                var uri = "http://localhost:8080/api/clients/" + parkingSpot.endpoint + objectPath;
+                var uri = "api/clients/" + parkingSpot.endpoint + objectPath;
                 $http.get(uri)
                 .success(function(data, status, headers, config) {
                     if (data.status == "CONTENT" && data.content) {
@@ -31,7 +31,7 @@ parkingSpotServices.factory('parkingSpotServices',["$http", function($http) {
         for (var k in mappings) {
             (function(key){ // anonymous function needed since otherwise key will always be last element of mappings
                 var objectPath = mappings[key];
-                var uri = "http://localhost:8080/api/clients/" + parkingSpot.endpoint + objectPath + "/observe";
+                var uri = "api/clients/" + parkingSpot.endpoint + objectPath + "/observe";
                 $http.post(uri)
                 .success(function(data, status, headers, config) {
                     if (data.status == "CONTENT" && data.content) {

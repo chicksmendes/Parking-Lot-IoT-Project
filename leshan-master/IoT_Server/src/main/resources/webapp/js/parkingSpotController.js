@@ -34,7 +34,7 @@ parkingSpotControllers.controller('ParkingSpotListCtrl', [
         }
         
         // get the list of connected clients
-        $http.get('http://localhost:8080/api/clients'). error(function(data, status, headers, config){
+        $http.get('api/clients'). error(function(data, status, headers, config){
             $scope.error = "Unable get parking spot list: " + status + " " + data  
             console.error($scope.error)
         }).success(function(data, status, headers, config) {
@@ -48,7 +48,7 @@ parkingSpotControllers.controller('ParkingSpotListCtrl', [
             $scope.parkingspotslist = true;
         
             // listen for clients registration/deregistration
-            $scope.eventsource = new EventSource('http://localhost:8080/event');
+            $scope.eventsource = new EventSource('event');
         
             var registerCallback = function(msg) {
                 $scope.$apply(function() {
@@ -104,7 +104,7 @@ parkingSpotControllers.controller('ParkingSpotDetailCtrl', [
         var dateSelected = function(date) {
             $scope.date = new Date(date);
             var uriDate = $.datepicker.formatDate("yy-mm-dd", $scope.date);
-            $http.get('http://localhost:8080/api/bills/?parkingSpotId=' + $routeParams.parkingSpotId + '&date=' + uriDate)
+            $http.get('api/bills/?parkingSpotId=' + $routeParams.parkingSpotId + '&date=' + uriDate)
             .error(function(data, status, headers, config) {  
                 console.error("Unable get connect");
             })
@@ -135,7 +135,7 @@ parkingSpotControllers.controller('ParkingSpotDetailCtrl', [
         });
         
         // get parkingSpot details
-        $http.get('http://localhost:8080/api/clients/' + $routeParams.parkingSpotEndpoint)
+        $http.get('api/clients' + $routeParams.parkingSpotEndpoint)
         .error(function(data, status, headers, config) {
             $scope.error = "Unable get parking spot " + $routeParams.parkingSpotEndpoint+" : "+ status + " " + data;  
             console.error($scope.error);
@@ -171,7 +171,7 @@ parkingSpotControllers.controller('BillsCtrl', [
             $scope.date = new Date(date);
             var uriDate = $.datepicker.formatDate("yy-mm-dd", $scope.date);
             console.log(uriDate);
-            $http.get('http://localhost:8080/api/bills/?date=' + uriDate)
+            $http.get('api/bills/?date=' + uriDate)
             .error(function(data, status, headers, config) {  
                 console.error("Unable get connect");
             })
