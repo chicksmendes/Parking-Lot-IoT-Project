@@ -126,9 +126,10 @@ public class IoT_Server {
 
         db = new DataBase();
         db.deleteDataBase("ParkingLotDB.db");
-		db.connect("ParkingLotDB");
+		db.createDataBase("ParkingLotDB");
 		
 		db.createTable();
+        LOG.info("DataBase Created");
 
 
         HelpFormatter formatter = new HelpFormatter();
@@ -294,9 +295,10 @@ public class IoT_Server {
 				LwM2mObjectInstance objectIDinstance = objectID.getInstance(0);
 				System.out.println("ID: " + objectIDinstance.getResource(32800).getValue());
 				System.out.println("State: " + objectIDinstance.getResource(32801).getValue());
+				System.out.println("Billing Rate: " + objectIDinstance.getResource(32803).getValue());
 				
 				// ADD TO THE DATABASE
-				db.insertParkingSpot(registration.getEndpoint());
+				db.insertParkingSpot(registration.getEndpoint(), (Double) objectIDinstance.getResource(32803).getValue());
 		        // create & process request
                 
                 ObserveRequest request = new ObserveRequest(ContentFormat.JSON, 3345, 5703);
@@ -429,7 +431,7 @@ public class IoT_Server {
         
 
 		
-        LOG.info("DataBase Created");
+
         
         // Register a service to DNS-SD
 		try {
