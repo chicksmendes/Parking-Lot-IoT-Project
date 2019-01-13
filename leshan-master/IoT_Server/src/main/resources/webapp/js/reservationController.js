@@ -1,20 +1,15 @@
-var parkingSpotControllers = angular.module('parkingSpotControllers', []);
+var reservationControllers = angular.module('reservationControllers', []);
 
-parkingSpotControllers.controller('ParkingSpotListCtrl', [
+reservationControllers.controller('ReservationCtrl', [
     '$scope',
     '$http',
     '$location',
     'lwResources',
     'parkingSpotServices',
-    function ParkingSpotListCtrl($scope, $http,$location, lwResources, parkingSpotServices) {
+    function ReservationCtrl($scope, $http,$location, lwResources, parkingSpotServices) {
         // update navbar
         angular.element("#navbar").children().removeClass('active');
-        angular.element("#parking-spot-navlink").addClass('active');
-
-        
-
-             alert('hello!');
-
+        angular.element("#reservation-navlink").addClass('active');
         
         // free resource when controller is destroyed
         $scope.$on('$destroy', function(){
@@ -23,20 +18,7 @@ parkingSpotControllers.controller('ParkingSpotListCtrl', [
             }
         });
         
-        // add function to show parking-spot
-        $scope.showParkingSpot = function(parkingSpot) {
-            $location.path('/parking-spots/' + parkingSpot.endpoint);
-        };
-        
-        $scope.numParkingSpots = function(state) {
-            var ret = 0;
-            $scope.parkingSpots.forEach(function(ps){
-                if (ps !== undefined && ps.state == state) {
-                    ret++;
-                }
-            });
-            return(ret);
-        }
+
         
         // get the list of connected clients
         $http.get('api/clients'). error(function(data, status, headers, config){
@@ -90,9 +72,24 @@ parkingSpotControllers.controller('ParkingSpotListCtrl', [
             $scope.eventsource.addEventListener('NOTIFICATION', notificationCallback, false);
 
         });
+
+        // add function to show parking-spot
+        $scope.showParkingSpot = function(parkingSpot) {
+            $location.path('/parking-spots/' + parkingSpot.endpoint);
+        };
+        
+        $scope.numParkingSpots = function(state) {
+            var ret = 0;
+            $scope.parkingSpots.forEach(function(ps){
+                if (ps !== undefined && ps.state == state) {
+                    ret++;
+                }
+            });
+            return(ret);
+        }
 }]);
 
-parkingSpotControllers.controller('ParkingSpotDetailCtrl', [
+reservationControllers.controller('ReservationCtrl', [
     '$scope',
     '$location',
     '$routeParams',
@@ -103,7 +100,7 @@ parkingSpotControllers.controller('ParkingSpotDetailCtrl', [
     function($scope, $location, $routeParams, $http, lwResources, $filter, parkingSpotServices) {
         // update navbar
         angular.element("#navbar").children().removeClass('active');
-        angular.element("#parking-spot-navlink").addClass('active');
+        angular.element("#reservation-navlink").addClass('active');
         $scope.parkingSpotEndpoint = $routeParams.parkingSpotEndpoint;
         
         var dateSelected = function(date) {
@@ -158,7 +155,7 @@ parkingSpotControllers.controller('ParkingSpotDetailCtrl', [
 }]);
 
 
-parkingSpotControllers.controller('BillsCtrl', [
+reservationControllers.controller('BillsCtrl', [
     '$scope',
     '$location',
     '$routeParams',

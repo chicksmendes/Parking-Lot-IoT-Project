@@ -42,9 +42,12 @@ public class DataBase {
 			stmt = c.createStatement();
 	         String sql1 = "CREATE TABLE PARK " +
 	                        "(ID INT PRIMARY KEY  AUTOINCREMENT NOT NULL," +
-	                        " STATE          INT     NOT NULL, " + 
+	                        " ENDPOINT       TEXT    NOT NULL" + 
+	                        " STATE          TEXT    NOT NULL, " + 
 	                        " PLATE          TEXT    NOT NULL)"; 
 	        stmt.executeUpdate(sql1);
+	        c.commit();
+	        stmt.close();
 	         
 	         stmt = c.createStatement();
 	         String sql = "CREATE TABLE VEHICLE  " +
@@ -55,6 +58,9 @@ public class DataBase {
 	                        " TIME           INT     NOT NULL, " + 
 	                        " COST           FLOAT   NOT NULL)"; 
 	         stmt.executeUpdate(sql);
+	         c.commit();
+	         stmt.close();
+	        
 
 	  	   System.out.println("Table created successfully");
       } catch ( Exception e ) {
@@ -63,7 +69,7 @@ public class DataBase {
 		
 	}
 	
-	public void insertParkingSpot() {
+	public void insertParkingSpot(String endpoint) {
 		Statement stmt = null;
 		
 		try {
@@ -72,8 +78,7 @@ public class DataBase {
 //	         c.setAutoCommit(false);
 //	         System.out.println("Opened database successfully");
 	         stmt = c.createStatement();
-	         String sql = "INSERT INTO PARK (STATE, PLATE) " +
-	                        "VALUES ( 0, 'Vehicle-_-_');"; 
+	         String sql = "INSERT INTO PARK (ENDPOINT, STATE, PLATE) " +  "VALUES (" + endpoint + ", 'free', 'Vehicle-_-_');"; 
 	         stmt.executeUpdate(sql);
 
 	         stmt.close();
@@ -215,33 +220,17 @@ public class DataBase {
 		   
 	}
 
-	public void delete() {
+	public void delete(String endpoint) {
 		Statement stmt = null;
 	      
 	      try {
 	         
 	         stmt = c.createStatement();
-	         String sql = "DELETE from COMPANY where ID=2;";
+	         String sql = "DELETE from PARK where ENDPOINT=" + endpoint + ";";
 	         stmt.executeUpdate(sql);
 	         c.commit();
 
-	         ResultSet rs = stmt.executeQuery( "SELECT * FROM COMPANY;" );
-	         
-	         while ( rs.next() ) {
-	         int id = rs.getInt("id");
-	         String  name = rs.getString("name");
-	         int age  = rs.getInt("age");
-	         String  address = rs.getString("address");
-	         float salary = rs.getFloat("salary");
-	         
-	         System.out.println( "ID = " + id );
-	         System.out.println( "NAME = " + name );
-	         System.out.println( "AGE = " + age );
-	         System.out.println( "ADDRESS = " + address );
-	         System.out.println( "SALARY = " + salary );
-	         System.out.println();
-	      }
-	      rs.close();
+	      
 	      stmt.close();
 	      } catch ( Exception e ) {
 	         System.err.println( e.getClass().getName() + ": " + e.getMessage() );

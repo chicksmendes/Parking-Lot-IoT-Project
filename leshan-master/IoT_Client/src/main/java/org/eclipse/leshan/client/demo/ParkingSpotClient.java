@@ -88,13 +88,20 @@ public class ParkingSpotClient {
         // get local address
         String localAddress = null;
 		
-		try {
-			localAddress = Discovery.discoverService();
-			System.out.println(localAddress);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		while(localAddress == null) {
+	        try {
+				localAddress = Discovery.discoverService();
+				
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	        if(localAddress == null) {
+	        	LOG.info("Can't find a server, trying again...");
+	        }
 		}
+		
+		System.out.println(localAddress);
 		
 		// Get server URI
         String serverURI = "coap://" + localAddress + ":" + LwM2m.DEFAULT_COAP_PORT;

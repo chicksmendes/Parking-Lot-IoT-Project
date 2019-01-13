@@ -117,12 +117,18 @@ public class IoT_Server {
     private final static String USAGE = "java -jar leshan-server-demo.jar [OPTION]\n\n";
     
     static LeshanServer lwServer;
+    
+    static DataBase db;
 
     public static void main(String[] args) {
         // Define options for command line tools
         Options options = new Options();
 
-        
+        db = new DataBase();
+        db.deleteDataBase("ParkingLotDB.db");
+		db.connect("ParkingLotDB");
+		
+		db.createTable();
 
 
         HelpFormatter formatter = new HelpFormatter();
@@ -290,7 +296,7 @@ public class IoT_Server {
 				System.out.println("State: " + objectIDinstance.getResource(32801).getValue());
 				
 				// ADD TO THE DATABASE
-				
+				db.insertParkingSpot(registration.getEndpoint());
 		        // create & process request
                 
                 ObserveRequest request = new ObserveRequest(ContentFormat.JSON, 3345, 5703);
@@ -336,6 +342,7 @@ public class IoT_Server {
 
 		    public void unregistered(Registration registration, Collection<Observation> observations, boolean expired, Registration newReg) {
 		        System.out.println("device left: " + registration.getEndpoint());
+		        db.delete(registration.getEndpoint());
 		    }
 		    
 		    
@@ -420,11 +427,7 @@ public class IoT_Server {
         
 
         
-        DataBase db = new DataBase();
-        db.deleteDataBase("ParkingLotDB.db");
-		db.connect("ParkingLotDB");
-		
-		db.createTable();
+
 		
         LOG.info("DataBase Created");
         

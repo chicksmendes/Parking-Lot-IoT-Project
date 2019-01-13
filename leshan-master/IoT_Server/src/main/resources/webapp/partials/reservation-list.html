@@ -1,4 +1,4 @@
-<span ng-if="parkingspotslist">
+<span ng-if="reservationlist">
 	
 	<br><br>
 	<div class="row">
@@ -18,16 +18,15 @@
 		</div>
 	</div>
 	<br><br>
-	<form id='nameForm'>
-	<div class='form-uname'>
+	<div class="row">
+		<div class="col-md-4 text-left sum-duration">
 			<b> Set Duration </b> <br>
-			Hours:   <input id="hourReserve" type="text" name="hour"> 
-			Minutes: <input id="minuteReserve" type="text" name="minute">
+			Hours:   <input type="text" name="hour"> 
+			Minutes: <input type="text" name="minute">
+		</div>
 	</div>
-	</form>
-
-	
 	<br>
+
 	<div class="table-responsive" ng-if="parkingSpots.length >0">
 		<table class="table table-condensed table-href">
 		<thead>
@@ -41,10 +40,13 @@
 			<tr ng-repeat="parkingSpot in parkingSpots" ng-click="showParkingSpot(parkingSpot)" class="{{parkingSpot.state}}">
 				<td><a ng-href="#/parking-spots/{{parkingSpot.endpoint}}/{{parkingSpot.id}}"> <strong>{{parkingSpot.id}}</strong></a></td>
 				<td>{{parkingSpot.state}}</td>
-				
+				<td>
+					<span ng-if="parkingSpot.state == 'reserved' || parkingSpot.state == 'occupied'">
+						{{parkingSpot.vehicleId}}
+					</span>
+				</td>
 				<td>{{parkingSpot.billingRate | number:2}}</td>
-				<td><button id="reserveButton" value="Reserve"></td>
-				
+				<td></td>
 			</tr>
 		</tbody>
 		</table>

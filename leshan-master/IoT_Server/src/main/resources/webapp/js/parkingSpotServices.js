@@ -1,4 +1,5 @@
 var parkingSpotServices = angular.module('parkingSpotServices', []);
+
 parkingSpotServices.factory('parkingSpotServices',["$http", function($http) {
     var serviceInstance = {};
     var mappings = {
