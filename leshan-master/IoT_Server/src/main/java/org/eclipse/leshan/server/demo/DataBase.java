@@ -7,6 +7,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.sql.ResultSet;
 
 public class DataBase {
 	// SQLite connection string
@@ -50,7 +51,9 @@ public class DataBase {
                 + "	endpoint text PRIMARY KEY,\n"
                 + "	state text NOT NULL,\n"
                 + "	plate text not null,\n"
-                + "	billingrate double  null\n"
+                + "	billingrate double  null,\n"
+                + "	yvalue int  null,\n"
+                + "	counter int not null\n"
                 + ");";
         
      // SQL statement for creating a new table
@@ -58,7 +61,7 @@ public class DataBase {
                 + "	plate text PRIMARY KEY,\n"
                 + "	park text NOT NULL,\n"
                 + "	time text not null,\n"
-                + "	cost float not null\n"
+                + "	cost double not null\n"
                 + ");";
         
         try (Connection conn = DriverManager.getConnection(databaseName);
@@ -68,156 +71,159 @@ public class DataBase {
             stmt.execute(sql2);
         } catch (SQLException e) {
             System.out.println(e.getMessage());
-        }		
+        }
+        System.out.println("Table Created");
+	}
+	
+	public void updateYValue(String endpointName, int newYvalue) {
+		String sql = "UPDATE park SET yvalue= ? , " + "WHERE endpoint= ?";
+		
+		try(Connection conn = this.connect();
+				PreparedStatement pstmt = conn.prepareStatement(sql)) {
+			 
+            // set the corresponding param
+            pstmt.setInt(1, newYvalue);
+            pstmt.setString(2, endpointName);
+            // update 
+            pstmt.executeUpdate();
+		}
+		catch (SQLException e) {
+            System.out.println(e.getMessage());
+		}
+	}
+	
+	public int readYValue(String endpoint) {
+		String sql = "SELECT yvalue FROM park WHERE endpoint = ?";	
+		int yvalue = 0;
+		try (Connection conn = this.connect();
+            PreparedStatement pstmt  = conn.prepareStatement(sql)){
+            
+            // set the value
+            pstmt.setString(1,endpoint);
+            //
+            ResultSet rs  = pstmt.executeQuery();
+            
+            // loop through the result set
+            while (rs.next()) {
+            	yvalue = rs.getInt("yavlue");
+                System.out.println(rs.getInt("yavlue"));
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+		
+		return yvalue;
 	}
 	
 	public void insertParkingSpot(String endpointName, double billingRate) {
-		String sql = "INSERT INTO park(endpoint, state, plate) VALUES(?,?,?)";
+		String sql = "INSERT INTO park(endpoint, state, plate, billingrate, yvalue, counter) VALUES(?,?,?,?,?,?)";
 		 
         try (Connection conn = this.connect();
                 PreparedStatement pstmt = conn.prepareStatement(sql)) {
             pstmt.setString(1, endpointName);
             pstmt.setString(2, "free");
             pstmt.setString(3, "---");
-            //pstmt.setDouble(4, billingRate);
+            pstmt.setDouble(4, billingRate);
+            pstmt.setInt(5, -100);
+            pstmt.setInt(6, 0);
             pstmt.executeUpdate();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
-		
-
 	}
 	
-//	public void insertVehicle(String plate) {
-//		Statement stmt = null;
-//		
-//		try {
-////			 Class.forName("org.sqlite.JDBC");
-////	         c = DriverManager.getConnection("jdbc:sqlite:" + name + ".db");
-////	         c.setAutoCommit(false);
-////	         System.out.println("Opened database successfully");
-//	         stmt = c.createStatement();
-//	         String sql = "INSERT INTO VEHICLE (PLATE, PARK, STARTTIME,TIME, COST) " +
-//	                        "VALUES (" + plate + ", '-1',  datetime(timestamp, 'localtime') , 0 );"; 
-//	        // data('now')
-//	         stmt.executeUpdate(sql);
-//
-//	         stmt.close();
-//	         c.commit();
-//	      } catch ( Exception e ) {
-//	         System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-//	         System.exit(0);
-//	      }
-//	      System.out.println("Records created successfully");
-//	}
-//		
-//	public void selectPark() {
-//		   Statement stmt = null;
-//		   try {
-//		      
-////			   Class.forName("org.sqlite.JDBC");
-////		         c = DriverManager.getConnection("jdbc:sqlite:" + name + ".db");
-////			      c.setAutoCommit(false);
-////			      System.out.println("Opened database successfully");
-//
-//
-//		      stmt = c.createStatement();
-//		      ResultSet rs = stmt.executeQuery( "SELECT * FROM COMPANY;" );
-//		      
-//		      while ( rs.next() ) {
-//		         int id = rs.getInt("id");
-//		         String  name = rs.getString("name");
-//		         int age  = rs.getInt("age");
-//		         String  address = rs.getString("address");
-//		         float salary = rs.getFloat("salary");
-//		         
-//		         System.out.println( "ID = " + id );
-//		         System.out.println( "NAME = " + name );
-//		         System.out.println( "AGE = " + age );
-//		         System.out.println( "ADDRESS = " + address );
-//		         System.out.println( "SALARY = " + salary );
-//		         System.out.println();
-//		      }
-//		      rs.close();
-//		      stmt.close();
-//		   } catch ( Exception e ) {
-//		      System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-//		      System.exit(0);
-//		   }
-//		   System.out.println("Operation done successfully");
-//	}
-//	
-//	public void selectVehicle() {
-//		   Statement stmt = null;
-//		   try {
-//		      
-////			   Class.forName("org.sqlite.JDBC");
-////		         c = DriverManager.getConnection("jdbc:sqlite:" + name + ".db");
-////			      c.setAutoCommit(false);
-////			      System.out.println("Opened database successfully");
-//
-//
-//		      stmt = c.createStatement();
-//		      ResultSet rs = stmt.executeQuery( "SELECT * FROM VEHICLE;" );
-//		      
-//		      while ( rs.next() ) {
-//		         int id = rs.getInt("id");
-//		         String  name = rs.getString("name");
-//		         int age  = rs.getInt("age");
-//		         String  address = rs.getString("address");
-//		         float salary = rs.getFloat("salary");
-//		         
-//		         System.out.println( "ID = " + id );
-//		         System.out.println( "NAME = " + name );
-//		         System.out.println( "AGE = " + age );
-//		         System.out.println( "ADDRESS = " + address );
-//		         System.out.println( "SALARY = " + salary );
-//		         System.out.println();
-//		      }
-//		      rs.close();
-//		      stmt.close();
-//		   } catch ( Exception e ) {
-//		      System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-//		      System.exit(0);
-//		   }
-//		   System.out.println("Operation done successfully");
-//	}
-//
-//	public void update() {
-//		Statement stmt = null;
-//		   
-//		   try {
-//		      stmt = c.createStatement();
-//		      String sql = "UPDATE COMPANY set SALARY = 25000.00 where ID=1;";
-//		      stmt.executeUpdate(sql);
-//		      c.commit();
-//
-//		      ResultSet rs = stmt.executeQuery( "SELECT * FROM COMPANY;" );
-//		      
-//		      while ( rs.next() ) {
-//		         int id = rs.getInt("id");
-//		         String  name = rs.getString("name");
-//		         int age  = rs.getInt("age");
-//		         String  address = rs.getString("address");
-//		         float salary = rs.getFloat("salary");
-//		         
-//		         System.out.println( "ID = " + id );
-//		         System.out.println( "NAME = " + name );
-//		         System.out.println( "AGE = " + age );
-//		         System.out.println( "ADDRESS = " + address );
-//		         System.out.println( "SALARY = " + salary );
-//		         System.out.println();
-//		      }
-//		      rs.close();
-//		      stmt.close();
-//		   } catch ( Exception e ) {
-//		      System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-//		      System.exit(0);
-//		   }
-//		    System.out.println("Operation done successfully");
-//		   
-//	}
-//
+	public void insertVehicle(String plate) {
+		String sql = "INSERT INTO vehicle(plate, park, time, cost) VALUES (?,?,?,?)";
+		
+		try(Connection conn = this.connect();
+				PreparedStatement pstmt = conn.prepareStatement(sql)){
+			pstmt.setString(1, plate);
+			pstmt.setString(2, "-1");
+			pstmt.setString(3, "---");
+			pstmt.setDouble(4, 0.0);
+			pstmt.executeUpdate();
+		} catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+	}
+
+	public void selectPark() {
+		String sql = "SELECT * FROM park";	
+		try(Connection conn = this.connect();
+			Statement stmt = conn.createStatement();
+			ResultSet rs = stmt.executeQuery(sql)){
+			while (rs.next()) {
+		         
+		         String endpoint = rs.getString("endpoint");
+		         String state = rs.getString("endpoint");
+		         String plate = rs.getString("plate");
+		         Double  billingrate= rs.getDouble("billingrate");
+		        
+		         System.out.println( "ENDPOINT = " + endpoint );
+		         System.out.println( "STATE = " + state );
+		         System.out.println( "PLATE = " + plate );
+		         System.out.println( "BILLINGRATE = " + billingrate );
+		      }
+		} catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+	}
+	
+
+
+	public void selectVehicle() {
+		String sql = "SELECT * FROM vehicle";
+		try(Connection conn = this.connect();
+			Statement stmt = conn.createStatement();
+			ResultSet rs = stmt.executeQuery(sql)){
+			while (rs.next()) {
+		         
+				 String plate = rs.getString("plate");
+				 String park = rs.getString("park");
+				 String time = rs.getString("time");
+		         Double cost= rs.getDouble("cost");
+		         
+		         System.out.println( "PLATE = " + plate );
+		         System.out.println( "PARK = " + park );
+		         System.out.println( "TIME = " + time );
+		         System.out.println( "COST = " + cost );
+		      }
+		} catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+	}
+	
+
+	
+	public void update(String endpoint, String state) {
+		
+		String sql = "UPDATE park SET state= ? , " + "WHERE endpoint= ?";
+		String sqL = "SELECT * FROM COMPANY";
+		
+		try(Connection conn = this.connect();
+				PreparedStatement stmt = conn.prepareStatement(sql)){
+				stmt.executeUpdate();
+		
+				ResultSet rs = stmt.executeQuery(sqL);
+			while (rs.next()) {
+				String endpointt = rs.getString("endpoint");
+				String statee = rs.getString("endpoint");
+				String plate = rs.getString("plate");
+				Double  billingrate= rs.getDouble("billingrate");
+  
+				System.out.println( "ENDPOINT = " + endpointt );
+				System.out.println( "STATE = " + statee );
+				System.out.println( "PLATE = " + plate );
+				System.out.println( "BILLINGRATE = " + billingrate );
+			}
+		}
+		catch (SQLException e) {
+            System.out.println(e.getMessage());
+		}			
+	}	
+	
+	
+
 	public void delete(String endpointName) {
 		String sql = "DELETE FROM park WHERE endpoint = ?";
 		 
@@ -234,41 +240,29 @@ public class DataBase {
         }
 	}
 	
-//	public void close() {
-//		try {
-//			c.close();
-//		} catch (SQLException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//	}
-////		Connection conn = null;
-////		try {
-////			String url = "jbdc:sqlite:" + fileName;
-////			try {
-////				Class.forName("oracle.jdbc.driver.OracleDriver");
-////			} catch (ClassNotFoundException e) {
-////				// TODO Auto-generated catch block
-////				e.printStackTrace();
-////			}
-////			conn = DriverManager.getConnection(url);
-////		}
-////		catch (SQLException e) {
-////			System.out.println(e.getMessage());
-////		}
-////		finally {
-////			try {
-////				if( conn != null) {
-////					conn.close();
-////				} 
-////			}catch (SQLException e) {
-////				System.out.println(e.getMessage());
-////			}
-////		}
-////	}
-////
-////	public DataBase() {
-////		
-////	}
+
+	public void connection(String fileName) {
+		Connection conn = null;
+		try {
+			String url = "jbdc:sqlite:" + fileName;
+			conn = DriverManager.getConnection(url);
+			
+			System.out.println("Connected.");
+		} catch (SQLException e) {
+		System.out.println(e.getMessage());
+		}
+		finally {
+			try {
+				if( conn != null) {
+					conn.close();
+				} 
+			}catch (SQLException e) {
+				System.out.println(e.getMessage());
+				}
+			}
+		}
+	
+
 }
+
 

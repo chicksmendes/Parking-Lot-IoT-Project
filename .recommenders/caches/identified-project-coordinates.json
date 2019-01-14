@@ -1,1 +1,1 @@
-[[{"location":"/usr/lib/jvm/java-8-openjdk-amd64","type":"JRE","hints":{"EXECUTION_ENVIRONMENT":"JavaSE-1.7"}},"jre:jre:1.7.0"]]
+[[{"location":"/home/francisco/eclipse-workspace/leshan-master/IoT_Server","type":"PROJECT","hints":{"PROJECT_NAME":"IoT_Server"}},"org.eclipse.leshan:leshan-server-demo:1.0.0"]]

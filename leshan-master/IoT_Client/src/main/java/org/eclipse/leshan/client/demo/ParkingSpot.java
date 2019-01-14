@@ -15,7 +15,7 @@ public class ParkingSpot extends BaseInstanceEnabler {
 	private static final int PARKING_SPOT_STATE = 32801;
 	private static final int VEHICLE_ID = 32802;
 	private static final int BILING_RATE = 32803;
-	//private static final int VEIHICLE_PLATE_IMAGE = 32804;
+	private static final int VEIHICLE_PLATE_IMAGE = 32804;
 	
 	private static final List<Integer> supportedResources = Arrays.asList(PARKING_SPOT_ID, PARKING_SPOT_STATE,
 			BILING_RATE);
@@ -77,10 +77,10 @@ public class ParkingSpot extends BaseInstanceEnabler {
 			fireResourcesChange(resourceId);
 			return WriteResponse.success();
 			
-//		case VEIHICLE_PLATE_IMAGE:
-//			ParkingSpotState = (String) value.getValue();
-//			
-		//	return WriteResponse.success();
+		case VEIHICLE_PLATE_IMAGE:
+			ParkingSpotState = (String) value.getValue();
+			
+			return WriteResponse.success();
 		default:
 			return super.write(resourceId, value);
 		}

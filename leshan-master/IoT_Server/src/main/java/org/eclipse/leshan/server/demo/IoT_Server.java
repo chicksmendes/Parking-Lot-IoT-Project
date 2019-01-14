@@ -18,6 +18,8 @@
 package org.eclipse.leshan.server.demo;
 
 import java.io.File;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.net.BindException;
 import java.net.InetSocketAddress;
 import java.net.URI;
@@ -119,6 +121,14 @@ public class IoT_Server {
     static LeshanServer lwServer;
     
     static DataBase db;
+    
+    public static double round(double value, int places) {
+        if (places < 0) throw new IllegalArgumentException();
+
+        BigDecimal bd = new BigDecimal(value);
+        bd = bd.setScale(places, RoundingMode.HALF_UP);
+        return bd.doubleValue();
+    }
 
     public static void main(String[] args) {
         // Define options for command line tools
@@ -295,10 +305,11 @@ public class IoT_Server {
 				LwM2mObjectInstance objectIDinstance = objectID.getInstance(0);
 				System.out.println("ID: " + objectIDinstance.getResource(32800).getValue());
 				System.out.println("State: " + objectIDinstance.getResource(32801).getValue());
-				System.out.println("Billing Rate: " + objectIDinstance.getResource(32803).getValue());
+				System.out.println("Billing Rate: " + round((Double) objectIDinstance.getResource(32803).getValue(), 2));
 				
 				// ADD TO THE DATABASE
-				db.insertParkingSpot(registration.getEndpoint(), (Double) objectIDinstance.getResource(32803).getValue());
+				db.insertParkingSpot(registration.getEndpoint(), round((Double) objectIDinstance.getResource(32803).getValue(), 2));
+
 		        // create & process request
                 
                 ObserveRequest request = new ObserveRequest(ContentFormat.JSON, 3345, 5703);
@@ -308,34 +319,6 @@ public class IoT_Server {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-                
-//		        
-//		        yValueCoapClient.observe(new CoapHandler() {
-//
-//		            @Override
-//		            public void onLoad(CoapResponse response) {
-//		                float yValue = Float.parseFloat(response.getResponseText());
-//
-//		                if (yValue == 100 && yValue != stateRegistry.get(registration.getEndpoint())) {
-//		                    stateClient.put("occupied", MediaTypeRegistry.TEXT_PLAIN);
-//		                    System.out.println("changed to ocuppied");
-//		                    stateRegistry.put(registration.getEndpoint(), 100);
-//		                    //ReservationDao.writeEventToDatabase(registration.getEndpoint(), clienToSpot.get(client.getRegistrationId()), null, null, "occupy");
-//		                }
-//
-//		                if (yValue == -100 && yValue != stateRegistry.get(registration.getEndpoint())) {
-//		                    stateClient.put("free", MediaTypeRegistry.TEXT_PLAIN);
-//		                    System.out.println("changed to free");
-//		                    stateRegistry.put(registration.getEndpoint(), -100);
-//		                    //ReservationDao.writeEventToDatabase(registration.getEndpoint(), clienToSpot.get(client.getRegistrationId()), null, null, "free");
-//		                }
-//		            }
-//
-//		            @Override
-//		            public void onError() {
-//		                System.err.println("Error on setting the observe relation");
-//		            }
-//		        });
 		    }
 
 		    public void updated(RegistrationUpdate update, Registration updatedReg, Registration previousReg) {
@@ -350,9 +333,6 @@ public class IoT_Server {
 		    
 		});
         
-//        lwServer.getObservationRegistry().addListener(new ObservationRegistryListener() {
-//        	
-//        })
         
         	
         lwServer.getObservationService().addListener(new ObservationListener() {
@@ -371,19 +351,15 @@ public class IoT_Server {
         		
         		// PUTTING THINGS IN DATA BASE IF A CHANGE IS FOUND
 
-//                if (yValue == 100 && yValue != stateRegistry.get(registration.getEndpoint())) {
-//                    stateClient.put("occupied", MediaTypeRegistry.TEXT_PLAIN);
-//                    System.out.println("changed to ocuppied");
-//                    stateRegistry.put(registration.getEndpoint(), 100);
-//                    //ReservationDao.writeEventToDatabase(registration.getEndpoint(), clienToSpot.get(client.getRegistrationId()), null, null, "occupy");
-//                }
-//
-//                if (yValue == -100 && yValue != stateRegistry.get(registration.getEndpoint())) {
-//                    stateClient.put("free", MediaTypeRegistry.TEXT_PLAIN);
-//                    System.out.println("changed to free");
-//                    stateRegistry.put(registration.getEndpoint(), -100);
-//                    //ReservationDao.writeEventToDatabase(registration.getEndpoint(), clienToSpot.get(client.getRegistrationId()), null, null, "free");
-//                }
+                if (yValue == 100 && yValue != db.readYValue(registration.getEndpoint())) {
+                	System.out.println(registration.getEndpoint() + " - changed to occupied");
+                    db.updateYValue(registration.getEndpoint(), 100);
+                }
+
+                if (yValue == -100 && yValue != db.readYValue(registration.getEndpoint())) {
+                    System.out.println(registration.getEndpoint() + " - changed to free");
+                    db.updateYValue(registration.getEndpoint(), -100);
+                }
         	}
         	
         	public void cancelled(Observation observation) {
