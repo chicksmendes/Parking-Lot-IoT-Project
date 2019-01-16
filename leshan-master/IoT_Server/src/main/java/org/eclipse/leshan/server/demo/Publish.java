@@ -1,20 +1,31 @@
 package org.eclipse.leshan.server.demo;
 
 import java.io.IOException;
+import java.net.DatagramSocket;
 import java.net.InetAddress;
+import java.net.SocketException;
 import java.net.UnknownHostException;
 
 import javax.jmdns.JmDNS;
 import javax.jmdns.ServiceInfo;
 
 public class Publish {
-	public static JmDNS createService() throws InterruptedException {
-
-
+	public static JmDNS createService() throws InterruptedException, SocketException {
+		String ip = null;
+		try(final DatagramSocket socket = new DatagramSocket()){
+			  try {
+				socket.connect(InetAddress.getByName("8.8.8.8"), 10002);
+			} catch (UnknownHostException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			  ip = socket.getLocalAddress().getHostAddress();
+			}
+		System.out.println(ip);
         // Create a JmDNS instance
         JmDNS jmdns = null;
 		try {
-			jmdns = JmDNS.create(InetAddress.getLocalHost());
+			jmdns = JmDNS.create(InetAddress.getByName(ip));
 		} catch (UnknownHostException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

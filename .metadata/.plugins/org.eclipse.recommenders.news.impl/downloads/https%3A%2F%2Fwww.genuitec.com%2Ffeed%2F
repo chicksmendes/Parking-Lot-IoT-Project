@@ -12,12 +12,29 @@
 	<atom:link href="https://www.genuitec.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.genuitec.com</link>
 	<description>The Cloud Control Company</description>
-	<lastBuildDate>Sat, 12 Jan 2019 23:09:01 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 15 Jan 2019 17:44:08 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.2</generator>
 	<item>
+		<title>Update RE: MyEclipse and Oracle JDK</title>
+		<link>https://www.genuitec.com/myeclipse-oraclejdk-update/</link>
+		<pubDate>Tue, 15 Jan 2019 16:26:34 +0000</pubDate>
+		<dc:creator><![CDATA[timwebb]]></dc:creator>
+				<category><![CDATA[Eclipse]]></category>
+		<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[MyEclipse]]></category>
+		<category><![CDATA[Webclipse]]></category>
+		<category><![CDATA[Oracle JDK]]></category>
+		<category><![CDATA[Oracle JDK licensing model]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=606801</guid>
+		<description><![CDATA[<p>There is a lot of concern regarding Oracle JDK in Enterprises, in particular with the new licensing model that is now in effect. If you are immediately required to discontinue use of all Oracle JDKs, scroll to the end for steps to facilitate that change. If you can wait just a little bit, it’s important [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/myeclipse-oraclejdk-update/">Update RE: MyEclipse and Oracle JDK</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
 		<title>MyEclipse 2018.12 &#8211; Start off the New Year on the Right Foot</title>
 		<link>https://www.genuitec.com/myeclipse-2018-12-release/</link>
 		<pubDate>Tue, 08 Jan 2019 19:11:42 +0000</pubDate>
@@ -292,26 +309,6 @@
 <p>The post <a rel="nofollow" href="https://www.genuitec.com/vue-example-creating-todo-app/">Vue Example: Creating a TODO App using Vue.js 2, Vuex and CodeMix</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
 ]]></description>
 		</item>
-		<item>
-		<title>A Day with Dani: Getting Started with Python and CodeMix</title>
-		<link>https://www.genuitec.com/a-day-with-dani-getting-started-with-python-and-codemix/</link>
-		<pubDate>Thu, 26 Jul 2018 15:33:33 +0000</pubDate>
-		<dc:creator><![CDATA[Dani Faris]]></dc:creator>
-				<category><![CDATA[Eclipse]]></category>
-		<category><![CDATA[Genuitec]]></category>
-		<category><![CDATA[MyEclipse]]></category>
-		<category><![CDATA[Programming Tips]]></category>
-		<category><![CDATA[Webclipse]]></category>
-		<category><![CDATA[Python]]></category>
-		<category><![CDATA[Python development]]></category>
-		<category><![CDATA[Python development in Eclipse]]></category>
-		<category><![CDATA[Python development with CodeMix]]></category>
-
-		<guid isPermaLink="false">https://www.genuitec.com/?p=594203</guid>
-		<description><![CDATA[<p>Like I mentioned in my last blog, CodeMix is a plugin I use that adds a ton of powerful tools and capabilities to my Eclipse environment. After working without it and seeing how much better my development experience is with it, I don’t think I’ll ever go back to the old Eclipse. Why? I’ve been [&#8230;]</p>
-<p>The post <a rel="nofollow" href="https://www.genuitec.com/a-day-with-dani-getting-started-with-python-and-codemix/">A Day with Dani: Getting Started with Python and CodeMix</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
-]]></description>
-		</item>
 	</channel>
 </rss>
 
@@ -320,5 +317,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/pro
 
 Content Delivery Network via resources.cloud.genuitec.com
 
-Served from: www.genuitec.com @ 2019-01-13 11:46:02 by W3 Total Cache
+Served from: www.genuitec.com @ 2019-01-15 11:46:27 by W3 Total Cache
 -->

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="/home/francisco/eclipse-workspace/leshan-master/IoT_Server/src/main/java/org/eclipse/leshan/server/demo" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="/home/francisco/eclipse-workspace/leshan-master/IoT_Client/src/main/java/org/eclipse/leshan/client/demo/lib" key="org.eclipse.jdt.ui.lastextjar"/>
 	<item value="false" key="SortMembers.sort_all"/>
 	<item value="/home/francisco/eclipse-workspace/leshan-master/IoT_Client/src/main" key="org.eclipse.jdt.ui.last.external.project"/>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
@@ -47,7 +47,7 @@
 	</section>
 	<section name="FatJarPackageWizard">
 		<item value="/home/francisco/eclipse-workspace" key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION"/>
-		<item value="main - IoT server" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
+		<item value="ParkingSpotClient - ParkingSpotClient" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
 		<item value="/home/francisco/Downloads/server.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
 		<item value="false" key="FatJarPackageWizardPage.ANTSCRIPT_SAVE"/>
 		<item value="1" key="FatJarPackageWizardPage.LIBRARY_HANDLING"/>
@@ -55,6 +55,7 @@
 			<item value="/home/francisco/Downloads/server.jar"/>
 		</list>
 		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">
+			<item value="/home/francisco/eclipse-workspace.xml"/>
 			<item value=".xml"/>
 		</list>
 	</section>

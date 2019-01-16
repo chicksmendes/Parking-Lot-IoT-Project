@@ -2,6 +2,9 @@ package org.eclipse.leshan.client.demo;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 import org.eclipse.leshan.client.resource.BaseInstanceEnabler;
 import org.eclipse.leshan.core.model.ObjectModel;
@@ -26,11 +29,75 @@ public class ParkingSpot extends BaseInstanceEnabler {
 	private float BillingRate;
 	//private FILE image;
 	
-	public ParkingSpot() {
-		ParkingSpotID = "Parking-Spot-Group129" ;
+	//private RPiCamera piCamera;
+	
+	public ParkingSpot(String endpoint) {
+		ParkingSpotID = endpoint ;
 		ParkingSpotState = "free";
 		VehicleID = "__-___-_";
 		BillingRate = 0.01f;
+		detectChange();
+		
+	}
+	
+	private void detectChange() {
+		System.out.println("detectChange");
+		ScheduledExecutorService exec = Executors.newSingleThreadScheduledExecutor();
+		exec.scheduleAtFixedRate(new Runnable() {
+			
+		
+		  @Override
+		  public void run() {
+			  String newPlate = "__-___-_";
+			  
+			  //newPlate = Camera.getPlate();
+			  
+			  if(newPlate.equalsIgnoreCase(VehicleID)) {
+
+				  System.out.println("Same State");
+			  }
+			  else {
+				  System.out.println("Found Change");
+				  System.out.println("New Plate: " + newPlate);
+				  if(newPlate.equalsIgnoreCase("__-___-_")) {
+					  if(ParkingSpotState.equalsIgnoreCase("reserved")) {
+						  
+						  System.out.println("Waiting for car to arrive to reserve spot");
+						  
+					  }
+					  else if(ParkingSpotState.equalsIgnoreCase("occupied")) {
+						  ParkingSpotState = "free";
+						  System.out.println("Car left");
+						  VehicleID = newPlate;
+						  fireResourcesChange(32801);
+					  }
+				  }
+				  
+				  else {
+					  if(ParkingSpotState.equalsIgnoreCase("free")) {
+						  ParkingSpotState = "occupied";
+						  System.out.println("Car detected");
+					  }
+					  else if(ParkingSpotState.equalsIgnoreCase("reserved")) {
+						  ParkingSpotState = "occupied";
+						  if(newPlate.equalsIgnoreCase(VehicleID)) {
+							  System.out.println("Car park in reserved Spot");
+						  }
+						  else {
+							  System.out.println("Car parked didn't reserve this spot");
+						  }
+					  }
+					  else if(ParkingSpotState.equalsIgnoreCase("occupied")) {
+						  ParkingSpotState = "free";
+						  System.out.println("Car left");
+					  }
+					  VehicleID = newPlate;
+					  fireResourcesChange(32801);
+				  }
+			  }
+		  }
+		}, 0, 1, TimeUnit.SECONDS);
+		
 	}
 	
 	@Override

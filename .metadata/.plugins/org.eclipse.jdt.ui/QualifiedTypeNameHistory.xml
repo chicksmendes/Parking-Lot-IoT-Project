@@ -25,4 +25,5 @@
 <fullyQualifiedTypeName name="org.apache.commons.lang.StringUtils"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.google.gson.JsonObject"/>
+<fullyQualifiedTypeName name="com.hopding.jrpicam.RPiCamera"/>
 </qualifiedTypeNameHistroy>

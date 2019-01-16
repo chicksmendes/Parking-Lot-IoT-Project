@@ -27,6 +27,7 @@ import static org.eclipse.leshan.client.object.Security.noSec;
 import java.io.File;
 import java.security.cert.CertificateEncodingException;
 import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 
 import org.apache.commons.cli.CommandLine;
@@ -49,6 +50,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class ParkingSpotClient {
+	
+	private final static String ENDPOINTNAME = "Parking-Spot-Group129";
 
     private static final Logger LOG = LoggerFactory.getLogger(ParkingSpotClient.class);
 
@@ -64,7 +67,16 @@ public class ParkingSpotClient {
 
     public static void main(final String[] args) {
     	
-    	String endpoint = "Parking-Spot-Group129" ; 
+    	Random r = new Random();
+    	
+    	// Gnerates random letter to test multiple clients
+        String alphabet = "abcdefghijklmn";
+        
+        char x = alphabet.charAt(r.nextInt(alphabet.length()));
+        
+    	String endpoint = ENDPOINTNAME + "-" + x ;
+    	
+    	LOG.info("Endpoint name: " + endpoint);
     	
         // Define options for command line tools
         Options options = new Options();
@@ -91,14 +103,16 @@ public class ParkingSpotClient {
 		while(localAddress == null) {
 	        try {
 				localAddress = Discovery.discoverService();
+				if(localAddress == null) {
+		        	LOG.info("Can't find a server, trying again...");
+		        }
+				localAddress="192.168.0.105";
 				
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-	        if(localAddress == null) {
-	        	LOG.info("Can't find a server, trying again...");
-	        }
+	        
 		}
 		
 		System.out.println(localAddress);
@@ -141,6 +155,12 @@ public class ParkingSpotClient {
             }
         }
         
+        Camera camera = new Camera();
+        
+        camera.takePicContinuosly();
+        
+        LOG.info("Start taking pictures");
+        
         
         try {
             createAndStartClient(endpoint, localAddress, localPort,  serverURI, latitude, longitude, scaleFactor);
@@ -170,7 +190,7 @@ public class ParkingSpotClient {
         
         initializer.setClassForObject(DEVICE, MyDevice.class);
         initializer.setInstancesForObject(LOCATION, locationInstance);
-        initializer.setInstancesForObject(OBJECT_ID_PARKING_SPOT, new ParkingSpot());
+        initializer.setInstancesForObject(OBJECT_ID_PARKING_SPOT, new ParkingSpot(endpoint));
         initializer.setInstancesForObject(OBJECT_ID_DISPLAY, new Display());
         initializer.setInstancesForObject(OBJECT_ID_JOYSTICK, new Joystick());
         List<LwM2mObjectEnabler> enablers = initializer.create(SECURITY, SERVER, DEVICE, LOCATION,
@@ -189,9 +209,9 @@ public class ParkingSpotClient {
 
         // Create client
         LeshanClientBuilder builder = new LeshanClientBuilder(endpoint);
-        builder.setLocalAddress(localAddress, localPort);
+        //builder.setLocalAddress(localAddress, localPort);
         builder.setObjects(enablers);
-        builder.setCoapConfig(coapConfig);
+        //builder.setCoapConfig(coapConfig);
         final LeshanClient client = builder.build();
 
         // Start the client

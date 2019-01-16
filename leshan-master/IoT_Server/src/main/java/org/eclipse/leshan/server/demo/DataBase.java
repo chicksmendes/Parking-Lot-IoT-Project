@@ -75,14 +75,14 @@ public class DataBase {
         System.out.println("Table Created");
 	}
 	
-	public void updateYValue(String endpointName, int newYvalue) {
-		String sql = "UPDATE park SET yvalue= ? , " + "WHERE endpoint= ?";
+	public void updateState(String endpointName, String state) {
+		String sql = "UPDATE park SET state= ? " + "WHERE endpoint= ?";
 		
 		try(Connection conn = this.connect();
 				PreparedStatement pstmt = conn.prepareStatement(sql)) {
 			 
             // set the corresponding param
-            pstmt.setInt(1, newYvalue);
+            pstmt.setString(1, state);
             pstmt.setString(2, endpointName);
             // update 
             pstmt.executeUpdate();
@@ -92,9 +92,9 @@ public class DataBase {
 		}
 	}
 	
-	public int readYValue(String endpoint) {
-		String sql = "SELECT yvalue FROM park WHERE endpoint = ?";	
-		int yvalue = 0;
+	public String readState(String endpoint) {
+		String sql = "SELECT state FROM park WHERE endpoint = ?";	
+		String state = null;
 		try (Connection conn = this.connect();
             PreparedStatement pstmt  = conn.prepareStatement(sql)){
             
@@ -105,14 +105,14 @@ public class DataBase {
             
             // loop through the result set
             while (rs.next()) {
-            	yvalue = rs.getInt("yavlue");
-                System.out.println(rs.getInt("yavlue"));
+            	state = rs.getString("state");
+                System.out.println(state);
             }
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
 		
-		return yvalue;
+		return state;
 	}
 	
 	public void insertParkingSpot(String endpointName, double billingRate) {

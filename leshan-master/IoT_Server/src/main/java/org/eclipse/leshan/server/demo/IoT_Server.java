@@ -93,7 +93,7 @@ public class IoT_Server {
 	
     private static final long TIMEOUT = 5000; // ms
     
-    private static final String FORMAT_PARAM = "format";
+    //private static final String FORMAT_PARAM = "format";
 
     static {
         // Define a default logback.configurationFile
@@ -156,10 +156,6 @@ public class IoT_Server {
             return;
         }
 
-
-
-
-        
 
         // get local address
         String localAddress = cl.getOptionValue("lh");
@@ -311,10 +307,10 @@ public class IoT_Server {
 				db.insertParkingSpot(registration.getEndpoint(), round((Double) objectIDinstance.getResource(32803).getValue(), 2));
 
 		        // create & process request
-                
-                ObserveRequest request = new ObserveRequest(ContentFormat.JSON, 3345, 5703);
+                // Observe the state of the park
+                ObserveRequest request = new ObserveRequest(ContentFormat.JSON, 32700, 32801);
                 try {
-					ObserveResponse cResponse = lwServer.send(registration, request, TIMEOUT);
+					lwServer.send(registration, request, TIMEOUT);
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -341,25 +337,39 @@ public class IoT_Server {
         	}
         	
         	public void onResponse(Observation observation, Registration registration, ObserveResponse response) {
-        		LwM2mObject objectYValue = (LwM2mObject) response.getContent();
-				LwM2mObjectInstance objectYValueinstance = objectYValue.getInstance(0);
-				System.out.println("Y Value: " + objectYValueinstance.getResource(5703).getValue());
-				
-				Double Yvalue = (Double) objectYValueinstance.getResource(5703).getValue();
-				
-        		float yValue = Yvalue.floatValue();
+        		System.out.println("State of parking spot" + registration.getEndpoint() + " changed.");
         		
-        		// PUTTING THINGS IN DATA BASE IF A CHANGE IS FOUND
+        		String parkTarget = "/32700";
+                ReadRequest parkRequest = new ReadRequest(parkTarget);
+                ReadResponse responseGet = null;
+				try {
+					responseGet = lwServer.send(registration, parkRequest, TIMEOUT);
+				} catch (CodecException | InvalidResponseException | RequestCanceledException | RequestRejectedException
+						| ClientSleepingException | InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+        		
+        		LwM2mObject parkObject = (LwM2mObject) responseGet.getContent();
+				LwM2mObjectInstance parkState = parkObject.getInstance(0);
+				System.out.println("New state: " + parkState.getResource(32801).getValue());
+//				
+				String state = (String) parkState.getResource(32801).getValue();
+//			
+//        		
+//        		// PUTTING THINGS IN DATA BASE IF A CHANGE IS FOUND
+				
+				String previousState = db.readState(registration.getEndpoint());
 
-                if (yValue == 100 && yValue != db.readYValue(registration.getEndpoint())) {
+                if (state.equalsIgnoreCase("occupied") && previousState.equalsIgnoreCase("free")) {
                 	System.out.println(registration.getEndpoint() + " - changed to occupied");
-                    db.updateYValue(registration.getEndpoint(), 100);
+                    db.updateState(registration.getEndpoint(), state);
                 }
 
-                if (yValue == -100 && yValue != db.readYValue(registration.getEndpoint())) {
-                    System.out.println(registration.getEndpoint() + " - changed to free");
-                    db.updateYValue(registration.getEndpoint(), -100);
-                }
+//                if (state == -100 && yValue != db.readYValue(registration.getEndpoint())) {
+//                    System.out.println(registration.getEndpoint() + " - changed to free");
+//                    db.updateYValue(registration.getEndpoint(), -100);
+//                }
         	}
         	
         	public void cancelled(Observation observation) {
@@ -403,16 +413,11 @@ public class IoT_Server {
         ServletHolder reservationServletHolder = new ServletHolder(new ClientReservationServlet(lwServer));
         root.addServlet(reservationServletHolder, "/api/reservation/*");
         
-
-        
-
-		
-
-        
+     
         // Register a service to DNS-SD
 		try {
 			JmDNS jmdns = Publish.createService();
-			Publish.publishCoapService(jmdns, webPort);
+			Publish.publishCoapService(jmdns, localPort);
 			Publish.publishHTTPService(jmdns, localPort);
 		} catch (InterruptedException e1) {
 			// TODO Auto-generated catch block

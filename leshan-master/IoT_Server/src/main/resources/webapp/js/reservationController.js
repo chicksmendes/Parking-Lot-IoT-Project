@@ -1,15 +1,18 @@
-var reservationControllers = angular.module('reservationControllers', []);
+var parkingSpotControllers = angular.module('reservationControllers', []);
 
-reservationControllers.controller('ReservationCtrl', [
+parkingSpotControllers.controller('ReservationCtrl', [
     '$scope',
     '$http',
     '$location',
     'lwResources',
     'parkingSpotServices',
-    function ReservationCtrl($scope, $http,$location, lwResources, parkingSpotServices) {
+    function ParkingSpotListCtrl($scope, $http,$location, lwResources, parkingSpotServices) {
         // update navbar
         angular.element("#navbar").children().removeClass('active');
-        angular.element("#reservation-navlink").addClass('active');
+        angular.element("#parking-spot-navlink").addClass('active');
+
+        
+
         
         // free resource when controller is destroyed
         $scope.$on('$destroy', function(){
@@ -18,61 +21,6 @@ reservationControllers.controller('ReservationCtrl', [
             }
         });
         
-
-        
-        // get the list of connected clients
-        $http.get('api/clients'). error(function(data, status, headers, config){
-            $scope.error = "Unable get parking spot list: " + status + " " + data  
-            console.error($scope.error)
-        }).success(function(data, status, headers, config) {
-            $scope.parkingSpots = data.map(function(ps){
-                parkingSpotServices.startObserving(ps);
-                return(parkingSpotServices.assignAttr(ps));
-            });
-            
-            // HACK : we can not use ng-if="clients"
-            // because of https://github.com/angular/angular.js/issues/3969
-            $scope.parkingspotslist = true;
-        
-            // listen for clients registration/deregistration
-            $scope.eventsource = new EventSource('event');
-        
-            var registerCallback = function(msg) {
-                $scope.$apply(function() {
-                    var parkingSpot = JSON.parse(msg.data);
-                    parkingSpot = parkingSpotServices.assignAttr(parkingSpot);
-                    parkingSpotServices.startObserving(parkingSpot);
-                    $scope.parkingSpots.push(parkingSpot);
-                });
-            }
-            $scope.eventsource.addEventListener('REGISTRATION', registerCallback, false);
-        
-            var getParkingSpotIdx = function(parkingSpot) {
-                for (var i = 0; i < $scope.parkingSpots.length; i++) {
-                    if ($scope.parkingSpots[i].registrationId == parkingSpot.registrationId) {
-                        return i;
-                    }
-                }
-                return -1;
-            }
-            var deregisterCallback = function(msg) {
-                $scope.$apply(function() {
-                    var parkingSpotIdx = getParkingSpotIdx(JSON.parse(msg.data));
-                    if(parkingSpotIdx >= 0) {
-                        $scope.parkingSpots.splice(parkingSpotIdx, 1);
-                    }
-                });
-            }
-            $scope.eventsource.addEventListener('DEREGISTRATION', deregisterCallback, false);
-            
-            
-            var notificationCallback = function(msg) {
-                parkingSpotServices.notificationCallback(msg, $scope);
-            }
-            $scope.eventsource.addEventListener('NOTIFICATION', notificationCallback, false);
-
-        });
-
         // add function to show parking-spot
         $scope.showParkingSpot = function(parkingSpot) {
             $location.path('/parking-spots/' + parkingSpot.endpoint);
@@ -87,9 +35,82 @@ reservationControllers.controller('ReservationCtrl', [
             });
             return(ret);
         }
+
+        $scope.reserveFunction = function(endpoint, duration, plate) {
+            console.log(endpoint);
+            console.log(duration);
+            console.log(plate);
+
+            $.ajax({
+                    url: "/api/reservation",    //Your api url
+                    type: 'PUT',   //type is any HTTP method
+                    data: {
+                        endpoint, duration, plate
+                    },
+                    dataType: "json"      //Data as js object
+            });
+            alert("Reserved!!!!! :D");
+
+        };
+        
+        $scope.showResults = function(){
+
+            // get the list of connected clients
+            $http.get('api/clients'). error(function(data, status, headers, config){
+                $scope.error = "Unable get parking spot list: " + status + " " + data  
+                console.error($scope.error)
+            }).success(function(data, status, headers, config) {
+                $scope.parkingSpots = data.map(function(ps){
+                    parkingSpotServices.startObserving(ps);
+                    return(parkingSpotServices.assignAttr(ps));
+                });
+                
+                // HACK : we can not use ng-if="clients"
+                // because of https://github.com/angular/angular.js/issues/3969
+                $scope.reservationpage = true;
+            
+                // listen for clients registration/deregistration
+                $scope.eventsource = new EventSource('event');
+            
+                var registerCallback = function(msg) {
+                    $scope.$apply(function() {
+                        var parkingSpot = JSON.parse(msg.data);
+                        parkingSpot = parkingSpotServices.assignAttr(parkingSpot);
+                        parkingSpotServices.startObserving(parkingSpot);
+                        $scope.parkingSpots.push(parkingSpot);
+                    });
+                }
+                $scope.eventsource.addEventListener('REGISTRATION', registerCallback, false);
+            
+                var getParkingSpotIdx = function(parkingSpot) {
+                    for (var i = 0; i < $scope.parkingSpots.length; i++) {
+                        if ($scope.parkingSpots[i].registrationId == parkingSpot.registrationId) {
+                            return i;
+                        }
+                    }
+                    return -1;
+                }
+                var deregisterCallback = function(msg) {
+                    $scope.$apply(function() {
+                        var parkingSpotIdx = getParkingSpotIdx(JSON.parse(msg.data));
+                        if(parkingSpotIdx >= 0) {
+                            $scope.parkingSpots.splice(parkingSpotIdx, 1);
+                        }
+                    });
+                }
+                $scope.eventsource.addEventListener('DEREGISTRATION', deregisterCallback, false);
+                
+                
+                var notificationCallback = function(msg) {
+                    parkingSpotServices.notificationCallback(msg, $scope);
+                }
+                $scope.eventsource.addEventListener('NOTIFICATION', notificationCallback, false);
+
+            });
+    };
 }]);
 
-reservationControllers.controller('ReservationCtrl', [
+parkingSpotControllers.controller('ParkingSpotDetailCtrl', [
     '$scope',
     '$location',
     '$routeParams',
@@ -100,7 +121,7 @@ reservationControllers.controller('ReservationCtrl', [
     function($scope, $location, $routeParams, $http, lwResources, $filter, parkingSpotServices) {
         // update navbar
         angular.element("#navbar").children().removeClass('active');
-        angular.element("#reservation-navlink").addClass('active');
+        angular.element("#parking-spot-navlink").addClass('active');
         $scope.parkingSpotEndpoint = $routeParams.parkingSpotEndpoint;
         
         var dateSelected = function(date) {
@@ -155,7 +176,7 @@ reservationControllers.controller('ReservationCtrl', [
 }]);
 
 
-reservationControllers.controller('BillsCtrl', [
+parkingSpotControllers.controller('BillsCtrl', [
     '$scope',
     '$location',
     '$routeParams',

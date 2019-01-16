@@ -13,8 +13,6 @@ parkingSpotControllers.controller('ParkingSpotListCtrl', [
 
         
 
-             alert('hello!');
-
         
         // free resource when controller is destroyed
         $scope.$on('$destroy', function(){

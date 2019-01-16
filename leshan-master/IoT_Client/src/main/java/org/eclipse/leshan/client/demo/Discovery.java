@@ -10,7 +10,7 @@ import javax.jmdns.ServiceInfo;
 
 public class Discovery {
 	public static String discoverService() throws InterruptedException {
-    	String ip = null;
+		String ip = null;
     	try {
             // Create a JmDNS instance
             JmDNS jmdns = JmDNS.create(InetAddress.getLocalHost());
@@ -21,7 +21,7 @@ public class Discovery {
             for(ServiceInfo service : jmdns.list("_coap._udp.local.")) {
             	for(Inet4Address addr : service.getInet4Addresses()) {
             		ip = addr.getHostAddress();
-            		//url = "127.0.0.1";
+            		
             	}
             }
             
@@ -34,5 +34,6 @@ public class Discovery {
             System.out.println(e.getMessage());
         }
     	return ip;
+
     }
 }
