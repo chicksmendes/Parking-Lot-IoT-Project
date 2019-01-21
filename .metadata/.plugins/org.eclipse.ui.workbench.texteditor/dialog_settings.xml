@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="unre" key="selection"/>
+		<item value="getPla" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="syste"/>
-			<item value="localAddress"/>
-			<item value="jms"/>
-			<item value="response"/>
-			<item value="reservationRequest"/>
-			<item value="target"/>
-			<item value="processD"/>
-			<item value="delete"/>
+			<item value="camera"/>
+			<item value="DEFAULT_COAP_PORT"/>
+			<item value="localPort"/>
+			<item value="device"/>
+			<item value="cLocationResponse"/>
+			<item value="plate"/>
+			<item value="publish"/>
+			<item value="localport"/>
 		</list>
 		<list key="replacehistory">
 			<item value="device"/>

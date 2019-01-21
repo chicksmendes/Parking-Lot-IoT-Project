@@ -23,7 +23,7 @@ public class Camera {
 			e1.printStackTrace();
 		}
 		try {
-			piCamera.takeStill("plateImage.jpg");
+			//piCamera.takeStill("plateImage.jpg");
 		} catch (IOException | InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -36,7 +36,7 @@ public class Camera {
 		exec.scheduleAtFixedRate(new Runnable() {
 		  @Override
 		  public void run() {
-			  //takePic();
+			  takePic();
 			  System.out.println("New Pic");
 		  }
 		}, 0, 1, TimeUnit.SECONDS);

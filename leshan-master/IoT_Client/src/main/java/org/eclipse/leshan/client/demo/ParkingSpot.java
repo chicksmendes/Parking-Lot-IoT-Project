@@ -50,7 +50,7 @@ public class ParkingSpot extends BaseInstanceEnabler {
 		  public void run() {
 			  String newPlate = "__-___-_";
 			  
-			  //newPlate = Camera.getPlate();
+			  newPlate = Camera.getPlate();
 			  
 			  if(newPlate.equalsIgnoreCase(VehicleID)) {
 

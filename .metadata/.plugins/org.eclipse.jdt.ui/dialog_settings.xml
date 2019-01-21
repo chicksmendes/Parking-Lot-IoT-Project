@@ -48,10 +48,11 @@
 	<section name="FatJarPackageWizard">
 		<item value="/home/francisco/eclipse-workspace" key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION"/>
 		<item value="ParkingSpotClient - ParkingSpotClient" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
-		<item value="/home/francisco/Downloads/server.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
+		<item value="/home/francisco/Downloads/client.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
 		<item value="false" key="FatJarPackageWizardPage.ANTSCRIPT_SAVE"/>
 		<item value="1" key="FatJarPackageWizardPage.LIBRARY_HANDLING"/>
 		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="/home/francisco/Downloads/client.jar"/>
 			<item value="/home/francisco/Downloads/server.jar"/>
 		</list>
 		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">
